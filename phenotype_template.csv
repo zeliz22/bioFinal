@@ -1,0 +1,11 @@
+species_id,species_name,max_lifespan_years,body_mass_kg,notes
+homo_sapiens,Homo sapiens,122.5,62.0,Human - longest documented
+mus_musculus,Mus musculus,4.0,0.02,House mouse
+rattus_norvegicus,Rattus norvegicus,4.5,0.4,Norway rat
+tursiops_truncatus,Tursiops truncatus,50,200,Bottlenose dolphin
+myotis_lucifugus,Myotis lucifugus,34,0.007,Little brown bat - very long-lived for size
+heterocephalus_glaber,Heterocephalus glaber,32,0.035,Naked mole-rat - extremely long-lived rodent
+elephas_maximus,Elephas maximus,86,4000,Asian elephant
+balaenoptera_musculus,Balaenoptera musculus,110,100000,Blue whale
+canis_familiaris,Canis familiaris,24,25,Domestic dog
+felis_catus,Felis catus,30,4.5,Domestic cat
