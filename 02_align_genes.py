@@ -13,6 +13,7 @@ import argparse
 from Bio import SeqIO, AlignIO
 #from Bio.Align.Applications import MafftCommandline, MuscleCommandline
 
+
 MT_GENES = ['ATP6', 'ATP8', 'COX1', 'COX2', 'COX3', 'CYTB',
             'ND1', 'ND2', 'ND3', 'ND4', 'ND4L', 'ND5', 'ND6']
 
