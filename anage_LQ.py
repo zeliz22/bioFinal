@@ -57,7 +57,7 @@ def main():
     # Group 3: Validation (4 species from the middle)
     # We take them from the center of the sorted list so they aren't outliers
     mid_index = len(df_sorted) // 2
-    val4 = df_sorted.iloc[mid_index-2*amoundOfSpeciesInEachGroup : mid_index+2*amoundOfSpeciesInEachGroup]['species_id'].tolist()
+    val4 = df_sorted.iloc[mid_index-4*amoundOfSpeciesInEachGroup : mid_index+4*amoundOfSpeciesInEachGroup]['species_id'].tolist()
 
     # 4. SAVE FILES
     out_dir = Path(args.output_dir)

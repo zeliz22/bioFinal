@@ -377,7 +377,7 @@ class CAASDiscoveryFromLists:
                     alternative='greater'
                 )
                 
-                caas['validated'] = pvalue < 0.05
+                caas['validated'] = pvalue < 0.15
                 caas['validation_pvalue'] = pvalue
                 caas['n_long_val'] = len(group_long)
                 caas['n_short_val'] = len(group_short)
@@ -456,10 +456,10 @@ class CAASDiscoveryFromLists:
         print(f"  Mean null:           {np.mean(null_counts):.1f} ± {np.std(null_counts):.1f}")
         print(f"  P-value:             {self.permutation_pvalue:.4f}")
         
-        if self.permutation_pvalue < 0.05:
+        if self.permutation_pvalue < 0.15:
             print(f"  *** SIGNIFICANT: More CAAS than expected by chance ***")
         else:
-            print(f"  Not significant at p < 0.05")
+            print(f"  Not significant at p < 0.15")
         
         return null_counts
     

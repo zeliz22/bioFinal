@@ -1,3 +1,11 @@
+Vulpes_macrotis
+Cervus_elaphus
+Arctogalidia_trivirgata
+Canis_latrans
+Dipodomys_heermanni
+Trichosurus_vulpecula
+Elephantulus_rufescens
+Planigale_maculata
 Ailurus_fulgens
 Puma_concolor
 Callospermophilus_lateralis
@@ -14,3 +22,11 @@ Vulpes_lagopus
 Hyaena_hyaena
 Elephantulus_rozeti
 Peromyscus_polionotus
+Pseudantechinus_macdonnellensis
+Kobus_ellipsiprymnus
+Gerbillus_pyramidum
+Procavia_capensis
+Puma_yagouaroundi
+Dasyuroides_byrnei
+Tamandua_mexicana
+Neovison_vison

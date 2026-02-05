@@ -1,6 +1,11 @@
 gene,position,scenario,long_lived_char,short_lived_char,alignment_type,validated,validation_pvalue,n_long_val,n_short_val
-ATP6,39,scenario_2,N,PS,protein,True,0.00949050949050949,9,5
-ATP6,53,scenario_1,T,I,protein,True,0.03671328671328671,7,6
-CYTB,95,scenario_1,Y,F,protein,True,0.02912087912087912,4,12
-ND2,14,scenario_1,I,L,protein,True,0.03333333333333333,6,4
-ND5,463,scenario_3,AIM,L,protein,True,0.025174825174825173,9,4
+ATP6,39,scenario_2,N,PS,protein,True,0.09907218639484086,18,7
+COX1,510,scenario_1,Y,F,protein,True,0.0897667871580915,19,8
+CYTB,43,scenario_3,LT,I,protein,True,0.116511970717801,15,10
+CYTB,211,scenario_1,I,L,protein,True,0.10965132483965939,14,9
+ND1,49,scenario_1,I,F,protein,True,0.10805378196682544,21,6
+ND2,14,scenario_1,I,L,protein,True,0.075990675990676,8,7
+ND2,69,scenario_3,LM,I,protein,True,0.13041557984349747,18,8
+ND2,227,scenario_2,T,IM,protein,True,0.10136508532326127,16,9
+ND3,86,scenario_2,T,FLNS,protein,True,0.0500515995872033,4,15
+ND4,81,scenario_1,V,I,protein,True,0.13537549407114624,21,3

@@ -1,14 +1,14 @@
 {
   "alignment_type": "nucleotide",
-  "n_total_species": 24,
+  "n_total_species": 35,
   "n_long_lived": 4,
   "n_short_lived": 4,
-  "n_validation": 16,
+  "n_validation": 27,
   "total_caas": 177,
   "scenario_1": 55,
   "scenario_2": 61,
   "scenario_3": 61,
-  "validated_caas": 7,
+  "validated_caas": 16,
   "permutation_pvalue": 0.027,
   "long_lived_species": [
     "Desmodus_rotundus",
