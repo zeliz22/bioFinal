@@ -1,0 +1,341 @@
+species_id,longevity_quotient,max_lifespan_years,body_mass_kg,expected_mls,LQ,Genus,Species,Common name,Class,Order,Family
+Echinops_telfairi,5.858719595197728,19.0,0.1164,3.2430294181639803,5.858719595197728,Echinops,telfairi,Lesser hedgehog tenrec,Mammalia,Afrosoricida,Tenrecidae
+Hemicentetes_semispinosus,0.8325548898438878,2.7,0.1164,3.2430294181639803,0.8325548898438878,Hemicentetes,semispinosus,Streaked tenrec,Mammalia,Afrosoricida,Tenrecidae
+Microgale_dobsoni,2.072023047544603,5.6,0.0446,2.7026726399767287,2.072023047544603,Microgale,dobsoni,Dobson's shrew tenrec,Mammalia,Afrosoricida,Tenrecidae
+Microgale_talazaci,2.151553566461062,5.8,0.044,2.695726516137829,2.151553566461062,Microgale,talazaci,Talazac's shrew tenrec,Mammalia,Afrosoricida,Tenrecidae
+Setifer_setosus,3.3954874397811134,14.1,0.42760000000000004,4.152570212690565,3.3954874397811134,Setifer,setosus,Greater hedgehog tenrec,Mammalia,Afrosoricida,Tenrecidae
+Tenrec_ecaudatus,1.9348437228845448,8.7,0.65,4.4964871824529995,1.9348437228845448,Tenrec,ecaudatus,"Tailess tenrec, or Tenrec",Mammalia,Afrosoricida,Tenrecidae
+Antilocapra_americana,1.7749173732647119,17.0,34.779300000000006,9.577910643091448,1.7749173732647119,Antilocapra,americana,Pronghorn,Mammalia,Artiodactyla,Antilocapridae
+Bos_taurus,1.348800050220651,20.0,347.0,14.827994702942211,1.348800050220651,Bos,taurus,Domestic cattle,Mammalia,Artiodactyla,Bovidae
+Connochaetes_taurinus,1.825776303796376,24.3,196.5,13.309407044812932,1.825776303796376,Connochaetes,taurinus,Blue wildebeest,Mammalia,Artiodactyla,Bovidae
+Kobus_ellipsiprymnus,2.562721619694685,30.0,100.0,11.706304644815113,2.562721619694685,Kobus,ellipsiprymnus,Waterbuck,Mammalia,Artiodactyla,Bovidae
+Madoqua_kirkii,2.6881864991547335,17.3,4.29,6.4355653915529185,2.6881864991547335,Madoqua,kirkii,Kirk's dik-dik,Mammalia,Artiodactyla,Bovidae
+Oreamnos_americanus,2.2063022967111325,20.8,32.0,9.427538570306492,2.2063022967111325,Oreamnos,americanus,Mountain goat,Mammalia,Artiodactyla,Bovidae
+Ovis_canadensis,1.8986952410381144,20.6,67.0308,10.849555818519312,1.8986952410381144,Ovis,canadensis,Bighorn sheep,Mammalia,Artiodactyla,Bovidae
+Philantomba_monticola,2.4806182651146638,15.9,4.2,6.409692383388558,2.4806182651146638,Philantomba,monticola,Blue duiker,Mammalia,Artiodactyla,Bovidae
+Raphicerus_campestris,1.240028287161956,9.3,9.6,7.499828912197516,1.240028287161956,Raphicerus,campestris,Steenbok,Mammalia,Artiodactyla,Bovidae
+Taurotragus_oryx,2.0875311432600285,26.1,141.404,12.50280748350441,2.0875311432600285,Taurotragus,oryx,Eland,Mammalia,Artiodactyla,Bovidae
+Camelus_dromedarius,1.8581277970335544,28.4,407.0,15.28420168157419,1.8581277970335544,Camelus,dromedarius,Dromedary,Mammalia,Artiodactyla,Camelidae
+Lama_glama,2.404060711842621,28.9,115.0,12.021327022914178,2.404060711842621,Lama,glama,Llama,Mammalia,Artiodactyla,Camelidae
+Capreolus_capreolus,2.0019578032816874,17.5,21.5,8.74144298711657,2.0019578032816874,Capreolus,capreolus,Western roe deer,Mammalia,Artiodactyla,Cervidae
+Cervus_elaphus,2.9035982051509563,31.5,67.0,10.84860844180138,2.9035982051509563,Cervus,elaphus,Red deer,Mammalia,Artiodactyla,Cervidae
+Odocoileus_virginianus,2.1524684542491657,23.0,61.8625,10.685406308555155,2.1524684542491657,Odocoileus,virginianus,White-tailed deer,Mammalia,Artiodactyla,Cervidae
+Rangifer_tarandus,1.9206448925812187,21.8,85.0,11.350354292043155,1.9206448925812187,Rangifer,tarandus,"Caribou, or Reindeer",Mammalia,Artiodactyla,Cervidae
+Sus_scrofa,2.1786151839576,27.0,135.0,12.393193712600818,2.1786151839576,Sus,scrofa,Wild boar,Mammalia,Artiodactyla,Suidae
+Pecari_tajacu,3.6362815146856264,31.5,20.5,8.66269563365292,3.6362815146856264,Pecari,tajacu,Collared peccary,Mammalia,Artiodactyla,Tayassuidae
+Ailurus_fulgens,2.7934475369461524,19.0,5.74,6.801631227616018,2.7934475369461524,Ailurus,fulgens,Red panda,Mammalia,Carnivora,Ailuridae
+Canis_latrans,2.876186653502388,21.8,10.1489,7.579480272413377,2.876186653502388,Canis,latrans,Coyote,Mammalia,Carnivora,Canidae
+Canis_mesomelas,2.3208622367199894,16.7,7.72,7.195601589692652,2.3208622367199894,Canis,mesomelas,Black-backed jackal,Mammalia,Carnivora,Canidae
+Cerdocyon_thous,1.8860771640213274,12.7,5.444,6.733552710495778,1.8860771640213274,Cerdocyon,thous,Crab-eating fox,Mammalia,Carnivora,Canidae
+Lycaon_pictus,2.3069998660309783,17.0,8.75,7.3688777577812505,2.3069998660309783,Lycaon,pictus,African wild dog,Mammalia,Carnivora,Canidae
+Vulpes_lagopus,2.6186068960878672,16.3,3.6,6.224683828776206,2.6186068960878672,Vulpes,lagopus,Arctic fox,Mammalia,Carnivora,Canidae
+Vulpes_macrotis,2.9051527808150017,15.8,1.769,5.438612421467047,2.9051527808150017,Vulpes,macrotis,Kit fox,Mammalia,Carnivora,Canidae
+Vulpes_velox,2.923539823731552,15.9,1.769,5.438612421467047,2.923539823731552,Vulpes,velox,Swift fox,Mammalia,Carnivora,Canidae
+Vulpes_vulpes,3.2688119413335417,21.3,4.5803,6.51612891236272,3.2688119413335417,Vulpes,vulpes,Red fox,Mammalia,Carnivora,Canidae
+Vulpes_zerda,3.247713358342048,16.3,1.1592,5.018915834469185,3.247713358342048,Vulpes,zerda,Fennec,Mammalia,Carnivora,Canidae
+Fossa_fossana,3.7558941810461817,21.4,2.26,5.6977111091130785,3.7558941810461817,Fossa,fossana,Malagasy civet,Mammalia,Carnivora,Eupleridae
+Acinonyx_jubatus,2.099965228651857,20.5,38.4461,9.76206640009971,2.099965228651857,Acinonyx,jubatus,Cheetah,Mammalia,Carnivora,Felidae
+Leopardus_pardalis,3.696607322792599,28.2,10.5,7.628616603696043,3.696607322792599,Leopardus,pardalis,Ocelot,Mammalia,Carnivora,Felidae
+Leopardus_wiedii,3.855617515712197,24.0,3.6,6.224683828776206,3.855617515712197,Leopardus,wiedii,Margay,Mammalia,Carnivora,Felidae
+Leptailurus_serval,4.579772436470516,22.4,1.012,4.891072713923524,4.579772436470516,Leptailurus,serval,Serval,Mammalia,Carnivora,Felidae
+Lynx_rufus,4.324027109939857,32.3,9.4,7.469888411603705,4.324027109939857,Lynx,rufus,Bobcat,Mammalia,Carnivora,Felidae
+Panthera_leo,2.4010723963402656,28.0,98.0,11.661455957212215,2.4010723963402656,Panthera,leo,Lion,Mammalia,Carnivora,Felidae
+Panthera_onca,2.724434727223005,28.0,50.4,10.277361289011385,2.724434727223005,Panthera,onca,Jaguar,Mammalia,Carnivora,Felidae
+Panthera_tigris,2.113580122575043,26.3,137.9,12.44334185351718,2.113580122575043,Panthera,tigris,Tiger,Mammalia,Carnivora,Felidae
+Puma_concolor,2.78317672319559,27.0,37.2,9.701144657820764,2.78317672319559,Puma,concolor,Cougar,Mammalia,Carnivora,Felidae
+Puma_yagouaroundi,2.543782983834631,18.6,8.4,7.311944500847864,2.543782983834631,Puma,yagouaroundi,Jaguarundi,Mammalia,Carnivora,Felidae
+Galerella_sanguinea,2.923974535287653,12.6,0.5196000000000001,4.309203054930314,2.923974535287653,Galerella,sanguinea,Slender mongoose,Mammalia,Carnivora,Herpestidae
+Herpestes_javanicus,3.7354285698084224,16.6,0.611,4.443934528468673,3.7354285698084224,Herpestes,javanicus,Javan mongoose,Mammalia,Carnivora,Herpestidae
+Suricata_suricatta,4.3536930090757755,20.6,0.85,4.731615195893905,4.3536930090757755,Suricata,suricatta,Meerkat,Mammalia,Carnivora,Herpestidae
+Hyaena_hyaena,2.6170637617899484,25.0,34.3,9.552690448360027,2.6170637617899484,Hyaena,hyaena,Striped hyena,Mammalia,Carnivora,Hyaenidae
+Proteles_cristata,2.7671574667761036,20.0,7.9026000000000005,7.2276334975982195,2.7671574667761036,Proteles,cristata,Aardwolf,Mammalia,Carnivora,Hyaenidae
+Spilogale_putorius,2.3533385282701467,10.5,0.624,4.461746524720422,2.3533385282701467,Spilogale,putorius,Eastern spotted skunk,Mammalia,Carnivora,Mephitidae
+Eira_barbara,3.720650342411633,22.3,2.95,5.993575839632836,3.720650342411633,Eira,barbara,Tayra,Mammalia,Carnivora,Mustelidae
+Enhydra_lutris,2.96140225921774,27.0,26.8328,9.11730242521396,2.96140225921774,Enhydra,lutris,Sea otter,Mammalia,Carnivora,Mustelidae
+Gulo_gulo,2.465426628463489,19.5,12.7,7.909381595408844,2.465426628463489,Gulo,gulo,Wolverine,Mammalia,Carnivora,Mustelidae
+Lutra_lutra,2.4079727394325263,18.2,10.0,7.558225100292909,2.4079727394325263,Lutra,lutra,European otter,Mammalia,Carnivora,Mustelidae
+Martes_americana,3.67123197481509,17.8,0.9665,4.848508653800483,3.67123197481509,Martes,americana,American marten,Mammalia,Carnivora,Mustelidae
+Martes_martes,3.789063458247387,18.2,0.92,4.803297754326427,3.789063458247387,Martes,martes,European pine marten,Mammalia,Carnivora,Mustelidae
+Meles_meles,2.414650556518192,18.6,11.05,7.702977952561506,2.414650556518192,Meles,meles,"European badger, or Old World badger",Mammalia,Carnivora,Mustelidae
+Mustela_erminea,3.7996875258855844,12.5,0.1255,3.2897441999751424,3.7996875258855844,Mustela,erminea,Ermine,Mammalia,Carnivora,Mustelidae
+Mustela_frenata,2.3941324423075803,8.8,0.225,3.6756529607518855,2.3941324423075803,Mustela,frenata,Long-tailed weasel,Mammalia,Carnivora,Mustelidae
+Neovison_vison,2.527968636824199,11.4,0.66,4.509549617799623,2.527968636824199,Neovison,vison,American mink,Mammalia,Carnivora,Mustelidae
+Taxidea_taxus,3.3745363439249547,25.0,9.0,7.4084251737298725,3.3745363439249547,Taxidea,taxus,American badger,Mammalia,Carnivora,Mustelidae
+Nandinia_binotata,3.2660150110094226,21.0,4.27,6.4298540971829645,3.2660150110094226,Nandinia,binotata,African palm civet,Mammalia,Carnivora,Nandiniidae
+Phoca_vitulina,5.200133866571448,47.6,27.4,9.153610507220199,5.200133866571448,Phoca,vitulina,Harbor seal,Mammalia,Carnivora,Phocidae
+Bassariscus_sumichrasti,4.692686325030278,24.0,1.28,5.114341410800592,4.692686325030278,Bassariscus,sumichrasti,Cacomistle,Mammalia,Carnivora,Procyonidae
+Nasua_narica,4.2256892115294,26.4,3.67,6.247501573937348,4.2256892115294,Nasua,narica,White-nosed coati,Mammalia,Carnivora,Procyonidae
+Nasua_nasua,3.745533674099087,23.7,3.9243,6.327536223713316,3.745533674099087,Nasua,nasua,South american coati,Mammalia,Carnivora,Procyonidae
+Potos_flavus,6.7071782816508,38.4,2.318,5.725209378294448,6.7071782816508,Potos,flavus,Kinkajou,Mammalia,Carnivora,Procyonidae
+Procyon_cancrivorus,3.785181954771889,19.0,1.16,5.019573755509204,3.785181954771889,Procyon,cancrivorus,Crab-eating raccoon,Mammalia,Carnivora,Procyonidae
+Procyon_lotor,3.1889033392963024,21.0,4.8422,6.585336012296342,3.1889033392963024,Procyon,lotor,Common raccoon,Mammalia,Carnivora,Procyonidae
+Melursus_ursinus,3.069892543540396,33.3,66.957,10.84728521526565,3.069892543540396,Melursus,ursinus,Sloth bear,Mammalia,Carnivora,Ursidae
+Arctictis_binturong,3.338455431356928,27.0,14.28,8.087572398420711,3.338455431356928,Arctictis,binturong,Binturong,Mammalia,Carnivora,Viverridae
+Arctogalidia_trivirgata,2.88934101875604,16.1,2.01,5.5722048368425545,2.88934101875604,Arctogalidia,trivirgata,Small-toothed palm civet,Mammalia,Carnivora,Viverridae
+Genetta_tigrina,3.946599344809495,21.3,1.699,5.397051521840803,3.946599344809495,Genetta,tigrina,Large-spotted genet,Mammalia,Carnivora,Viverridae
+Paradoxurus_hermaphroditus,4.005574826092976,24.5,3.2826,6.116475428296321,4.005574826092976,Paradoxurus,hermaphroditus,Asian palm civet,Mammalia,Carnivora,Viverridae
+Phocoena_phocoena,2.2120239356126876,20.4,28.5,9.222323353544361,2.2120239356126876,Phocoena,phocoena,Harbor porpoise,Mammalia,Cetacea,Phocoenidae
+Saccopteryx_bilineata,3.0919570593512926,6.0,0.0078,1.9405185404673209,3.0919570593512926,Saccopteryx,bilineata,Greater sac-winged bat,Mammalia,Chiroptera,Emballonuridae
+Macroderma_gigas,6.864647064862502,22.6,0.126,3.292230436096379,6.864647064862502,Macroderma,gigas,Australian false vampire bat,Mammalia,Chiroptera,Megadermatidae
+Miniopterus_schreibersii,10.638779902761387,22.0,0.0109,2.067906301387973,10.638779902761387,Miniopterus,schreibersii,Schreibers's long-fingered bat,Mammalia,Chiroptera,Miniopteridae
+Tadarida_brasiliensis,5.587655369842365,12.0,0.013300000000000001,2.14759128932079,5.587655369842365,Tadarida,brasiliensis,Brazilian free-tailed bat,Mammalia,Chiroptera,Molossidae
+Noctilio_leporinus,4.1138600819048765,11.8,0.061,2.8683522932399157,4.1138600819048765,Noctilio,leporinus,Greater bulldog bat,Mammalia,Chiroptera,Noctilionidae
+Artibeus_jamaicensis,7.05956970731093,19.2,0.0461,2.7197125031737235,7.05956970731093,Artibeus,jamaicensis,Jamaican fruit-eating bat,Mammalia,Chiroptera,Phyllostomidae
+Carollia_perspicillata,7.74682433944234,17.0,0.0149,2.1944475897621496,7.74682433944234,Carollia,perspicillata,Seba's short-tailed bat,Mammalia,Chiroptera,Phyllostomidae
+Desmodus_rotundus,11.694375553423981,29.2,0.0294,2.4969268232069535,11.694375553423981,Desmodus,rotundus,Vampire bat,Mammalia,Chiroptera,Phyllostomidae
+Glossophaga_soricina,5.44930766810173,11.0,0.0096,2.0186050540676956,5.44930766810173,Glossophaga,soricina,Pallas's long-tongued bat,Mammalia,Chiroptera,Phyllostomidae
+Macrotus_californicus,8.110988499963502,17.0,0.011699999999999999,2.095922093845466,8.110988499963502,Macrotus,californicus,California leaf-nosed bat,Mammalia,Chiroptera,Phyllostomidae
+Phyllostomus_discolor,3.5161239316098523,9.0,0.0335,2.559636740642234,3.5161239316098523,Phyllostomus,discolor,Pale spear-nosed bat,Mammalia,Chiroptera,Phyllostomidae
+Phyllostomus_hastatus,5.902600437930345,18.0,0.0842,3.049503382328115,5.902600437930345,Phyllostomus,hastatus,Greater spear-nosed bat,Mammalia,Chiroptera,Phyllostomidae
+Platyrrhinus_lineatus,5.506037291638831,13.0,0.0219,2.3610446699554855,5.506037291638831,Platyrrhinus,lineatus,White-lined broad-nosed bat,Mammalia,Chiroptera,Phyllostomidae
+Sturnira_lilium,5.104847904547362,12.0,0.0214,2.3507066663652183,5.104847904547362,Sturnira,lilium,Little yellow-shouldered bat,Mammalia,Chiroptera,Phyllostomidae
+Cynopterus_brachyotis,3.8681062351299835,10.1,0.037200000000000004,2.6110968484454253,3.8681062351299835,Cynopterus,brachyotis,Lesser short-nosed fruit bat,Mammalia,Chiroptera,Pteropodidae
+Dobsonia_moluccensis,3.1440554340489153,12.3,0.31239999999999996,3.912144762714968,3.1440554340489153,Dobsonia,moluccensis,Moluccan naked-backed fruit bat,Mammalia,Chiroptera,Pteropodidae
+Pteropus_giganteus,10.058971893159825,44.0,0.5622,4.374204488027283,10.058971893159825,Pteropus,giganteus,Indian flying fox,Mammalia,Chiroptera,Pteropodidae
+Pteropus_hypomelanus,4.7087835824315105,20.3,0.5207999999999999,4.311092163109678,4.7087835824315105,Pteropus,hypomelanus,Variable flying fox,Mammalia,Chiroptera,Pteropodidae
+Pteropus_poliocephalus,5.332353787836077,23.6,0.598,4.425812865949601,5.332353787836077,Pteropus,poliocephalus,Gray-headed flying fox,Mammalia,Chiroptera,Pteropodidae
+Pteropus_pumilus,4.812173443175667,17.2,0.19419999999999998,3.5742685094594826,4.812173443175667,Pteropus,pumilus,Little golden-mantled flying fox,Mammalia,Chiroptera,Pteropodidae
+Pteropus_rodricensis,7.4414493462649,28.0,0.2545,3.7627078673933445,7.4414493462649,Pteropus,rodricensis,Rodriguez flying fox,Mammalia,Chiroptera,Pteropodidae
+Pteropus_scapulatus,3.927196540789725,15.8,0.362,4.023226196064727,3.927196540789725,Pteropus,scapulatus,Little red flying fox,Mammalia,Chiroptera,Pteropodidae
+Pteropus_vampyrus,4.263294179978967,20.9,1.0243,4.902312417977009,4.263294179978967,Pteropus,vampyrus,Large flying fox,Mammalia,Chiroptera,Pteropodidae
+Rousettus_aegyptiacus,6.76376667673847,22.9,0.146,3.3856874570727387,6.76376667673847,Rousettus,aegyptiacus,Egyptian rousette,Mammalia,Chiroptera,Pteropodidae
+Antrozous_pallidus,6.2629880641755165,14.8,0.022,2.363089287149764,6.2629880641755165,Antrozous,pallidus,Pallid bat,Mammalia,Chiroptera,Vespertilionidae
+Eptesicus_fuscus,8.847121002250411,19.0,0.013300000000000001,2.14759128932079,8.847121002250411,Eptesicus,fuscus,Big brown bat,Mammalia,Chiroptera,Vespertilionidae
+Myotis_lucifugus,18.535648121341215,34.0,0.0058,1.8343032721285717,18.535648121341215,Myotis,lucifugus,Little brown bat,Mammalia,Chiroptera,Vespertilionidae
+Myotis_nigricans,4.156424445801223,7.0,0.0037,1.6841398397296328,4.156424445801223,Myotis,nigricans,Black myotis,Mammalia,Chiroptera,Vespertilionidae
+Myotis_velifer,5.374087073715469,11.3,0.0119,2.102682715222094,5.374087073715469,Myotis,velifer,Cave myotis,Mammalia,Chiroptera,Vespertilionidae
+Myotis_vivesi,4.130204697940309,10.0,0.025,2.4211875031246994,4.130204697940309,Myotis,vivesi,Fish-eating bat,Mammalia,Chiroptera,Vespertilionidae
+Myotis_yumanensis,7.85061921358082,14.0,0.005,1.7832988225669308,7.85061921358082,Myotis,yumanensis,Yuma myotis,Mammalia,Chiroptera,Vespertilionidae
+Plecotus_auritus,14.691542645028626,30.0,0.010199999999999999,2.0419911458482205,14.691542645028626,Plecotus,auritus,Brown big-eared bat,Mammalia,Chiroptera,Vespertilionidae
+Chaetophractus_vellerosus,3.2544966329981397,16.2,1.11,4.977728302356876,3.2544966329981397,Chaetophractus,vellerosus,Screaming hairy armadillo,Mammalia,Cingulata,Dasypodidae
+Chaetophractus_villosus,3.8738259736689318,25.2,4.54,6.5051967154148835,3.8738259736689318,Chaetophractus,villosus,Large hairy armadillo,Mammalia,Cingulata,Dasypodidae
+Dasypus_novemcinctus,3.61886368236535,22.3,3.4137,6.162155294400132,3.61886368236535,Dasypus,novemcinctus,Nine-banded armadillo,Mammalia,Cingulata,Dasypodidae
+Euphractus_sexcinctus,3.037026002907426,22.1,8.19,7.276855706484924,3.037026002907426,Euphractus,sexcinctus,Six-banded armadillo,Mammalia,Cingulata,Dasypodidae
+Priodontes_maximus,1.490093060601789,15.0,45.19,10.06648537370015,1.490093060601789,Priodontes,maximus,Giant armadillo,Mammalia,Cingulata,Dasypodidae
+Tolypeutes_matacus,7.3312997860845,36.8,1.16,5.019573755509204,7.3312997860845,Tolypeutes,matacus,Southern three-banded armadillo,Mammalia,Cingulata,Dasypodidae
+Zaedyus_pichiy,2.3056099294729453,12.5,1.74,5.421558885660012,2.3056099294729453,Zaedyus,pichiy,Pichi,Mammalia,Cingulata,Dasypodidae
+Antechinomys_laniger,1.4369461006838977,3.5,0.0258,2.4357211438440287,1.4369461006838977,Antechinomys,laniger,Kultarr,Mammalia,Dasyuromorphia,Dasyuridae
+Antechinus_flavipes,1.4316231877767491,3.9,0.0465,2.724180519914976,1.4316231877767491,Antechinus,flavipes,Yellow-footed antechinus,Mammalia,Dasyuromorphia,Dasyuridae
+Antechinus_stuartii,2.230310536887767,5.4,0.025,2.4211875031246994,2.230310536887767,Antechinus,stuartii,Brown antechinus,Mammalia,Dasyuromorphia,Dasyuridae
+Antechinus_swainsonii,1.1304807083207078,3.3,0.0669,2.9191121756531717,1.1304807083207078,Antechinus,swainsonii,Dusky antechinus,Mammalia,Dasyuromorphia,Dasyuridae
+Dasycercus_cristicauda,2.391079594456537,7.4,0.091,3.094836331319171,2.391079594456537,Dasycercus,cristicauda,Mulgara,Mammalia,Dasyuromorphia,Dasyuridae
+Dasyuroides_byrnei,2.539043637561445,8.0,0.1,3.150792637689119,2.539043637561445,Dasyuroides,byrnei,Kowari,Mammalia,Dasyuromorphia,Dasyuridae
+Dasyurus_geoffroii,1.2040514608671562,6.2,1.3267,5.149281572678603,1.2040514608671562,Dasyurus,geoffroii,Western quoll,Mammalia,Dasyuromorphia,Dasyuridae
+Dasyurus_hallucatus,1.3448422019739388,5.9,0.571,4.38713180724108,1.3448422019739388,Dasyurus,hallucatus,Northern quoll,Mammalia,Dasyuromorphia,Dasyuridae
+Dasyurus_maculatus,1.2485807294464228,6.8,1.782,5.4461836865085065,1.2485807294464228,Dasyurus,maculatus,"Tiger quoll, or Australian tiger cat",Mammalia,Dasyuromorphia,Dasyuridae
+Dasyurus_viverrinus,1.4084156937659604,6.8,0.9452999999999999,4.828120014636794,1.4084156937659604,Dasyurus,viverrinus,Eastern quoll,Mammalia,Dasyuromorphia,Dasyuridae
+Phascogale_tapoatafa,1.7256954530942918,5.9,0.15369999999999998,3.418911482568312,1.7256954530942918,Phascogale,tapoatafa,Brush-tailed phascogale,Mammalia,Dasyuromorphia,Dasyuridae
+Planigale_maculata,2.8196815145846883,5.8,0.0106,2.056969898905155,2.8196815145846883,Planigale,maculata,Pygmy planigale,Mammalia,Dasyuromorphia,Dasyuridae
+Pseudantechinus_macdonnellensis,2.6069189960191594,7.0,0.0431,2.6851620670566296,2.6069189960191594,Pseudantechinus,macdonnellensis,Fat-tailed marsupial mouse,Mammalia,Dasyuromorphia,Dasyuridae
+Sarcophilus_harrisii,1.8877702021318645,13.0,6.1268,6.886431402147921,1.8877702021318645,Sarcophilus,harrisii,Tasmanian devil,Mammalia,Dasyuromorphia,Dasyuridae
+Sminthopsis_crassicaudata,2.2478503023888328,5.0,0.016,2.2243474108068524,2.2478503023888328,Sminthopsis,crassicaudata,Fat-tailed dunnart,Mammalia,Dasyuromorphia,Dasyuridae
+Sminthopsis_macroura,2.099623795869501,4.9,0.0206,2.3337514128195527,2.099623795869501,Sminthopsis,macroura,Stripe-faced dunnart,Mammalia,Dasyuromorphia,Dasyuridae
+Myrmecobius_fasciatus,2.6366659591642168,11.0,0.4382,4.171935379894249,2.6366659591642168,Myrmecobius,fasciatus,Numbat,Mammalia,Dasyuromorphia,Myrmecobiidae
+Caluromys_derbianus,2.185071994242447,8.7,0.3427,3.9815621741178577,2.185071994242447,Caluromys,derbianus,Central American woolly opossum,Mammalia,Didelphimorphia,Didelphidae
+Didelphis_marsupialis,0.8256456539264929,4.2,1.2443,5.086928006011069,0.8256456539264929,Didelphis,marsupialis,Southern opossum,Mammalia,Didelphimorphia,Didelphidae
+Didelphis_virginiana,1.1086694717414123,6.6,2.8466,5.953081750896622,1.1086694717414123,Didelphis,virginiana,Virginia opossum,Mammalia,Didelphimorphia,Didelphidae
+Lutreolina_crassicaudata,0.6182477298420213,2.9,0.812,4.690676342218073,0.6182477298420213,Lutreolina,crassicaudata,Lutrine opossum,Mammalia,Didelphimorphia,Didelphidae
+Marmosa_robinsoni,1.5280649510557067,5.0,0.122,3.2721122204560804,1.5280649510557067,Marmosa,robinsoni,Robinson's mouse opossum,Mammalia,Didelphimorphia,Didelphidae
+Metachirus_nudicaudatus,0.7563049972965951,3.0,0.336,3.966653679036197,0.7563049972965951,Metachirus,nudicaudatus,Brown four-eyed opossum,Mammalia,Didelphimorphia,Didelphidae
+Monodelphis_brevicaudata,1.2588522983547668,3.9,0.0915,3.09806003857405,1.2588522983547668,Monodelphis,brevicaudata,"Northern red-sided opossum, or Short bare-tailed opossum",Mammalia,Didelphimorphia,Didelphidae
+Monodelphis_domestica,1.6066231468986032,5.1,0.104,3.1743598427826396,1.6066231468986032,Monodelphis,domestica,Gray short-tailed opossum,Mammalia,Didelphimorphia,Didelphidae
+Philander_opossum,0.9520533081815936,4.4,0.751,4.621589948995534,0.9520533081815936,Philander,opossum,Gray four-eyed opossum,Mammalia,Didelphimorphia,Didelphidae
+Acrobates_pygmaeus,4.057873678841439,8.8,0.014,2.168623445792547,4.057873678841439,Acrobates,pygmaeus,Pygmy gliding possum,Mammalia,Diprotodontia,Acrobatidae
+Burramys_parvus,4.445746713027997,12.0,0.0443,2.699209103576394,4.445746713027997,Burramys,parvus,Mountain pygmy possum,Mammalia,Diprotodontia,Burramyidae
+Cercartetus_nanus,3.549916612373102,10.3,0.0648,2.901476604858755,3.549916612373102,Cercartetus,nanus,Eastern pygmy possum,Mammalia,Diprotodontia,Burramyidae
+Dendrolagus_matschiei,3.812735713891876,26.9,6.96,7.055301499652501,3.812735713891876,Dendrolagus,matschiei,Matschie's tree kangaroo,Mammalia,Diprotodontia,Macropodidae
+Lagorchestes_conspicillatus,1.4973914161399793,8.8,2.66,5.876886901545693,1.4973914161399793,Lagorchestes,conspicillatus,Spectacled hare-wallaby,Mammalia,Diprotodontia,Macropodidae
+Macropus_eugenii,2.297153847157511,15.1,4.796,6.573351636280121,2.297153847157511,Macropus,eugenii,Tammar wallaby,Mammalia,Diprotodontia,Macropodidae
+Macropus_robustus,2.36768547971472,22.0,29.6479,9.291774683962988,2.36768547971472,Macropus,robustus,Wallaroo,Mammalia,Diprotodontia,Macropodidae
+Macropus_rufus,2.7108136465841763,25.0,28.5,9.222323353544361,2.7108136465841763,Macropus,rufus,Red kangaroo,Mammalia,Diprotodontia,Macropodidae
+Setonix_brachyurus,2.3411534902697437,13.8,2.7023,5.894530220831436,2.3411534902697437,Setonix,brachyurus,Quokka,Mammalia,Diprotodontia,Macropodidae
+Gymnobelideus_leadbeateri,4.064234460799558,14.1,0.166,3.4692880383741693,4.064234460799558,Gymnobelideus,leadbeateri,Leadbeater's possum,Mammalia,Diprotodontia,Petauridae
+Petaurus_breviceps,5.38017572425818,17.8,0.1293,3.308442123877705,5.38017572425818,Petaurus,breviceps,Sugar glider,Mammalia,Diprotodontia,Petauridae
+Trichosurus_vulpecula,2.8579209807190913,15.9,1.9935,5.56348482245277,2.8579209807190913,Trichosurus,vulpecula,Brush-tailed possum,Mammalia,Diprotodontia,Phalangeridae
+Phascolarctos_cinereus,3.370598141631556,22.1,4.732399999999999,6.556699752199584,3.370598141631556,Phascolarctos,cinereus,Koala,Mammalia,Diprotodontia,Phascolarctidae
+Aepyprymnus_rufescens,2.1539857065036694,12.8,2.82,5.942472116389689,2.1539857065036694,Aepyprymnus,rufescens,Rufous 'rat'-kangaroo,Mammalia,Diprotodontia,Potoroidae
+Bettongia_penicillata,3.839422887250444,18.8,1.018,4.896569237639616,3.839422887250444,Bettongia,penicillata,Woylie,Mammalia,Diprotodontia,Potoroidae
+Potorous_tridactylus,2.946297607998192,14.5,1.0455,4.921430869928907,2.946297607998192,Potorous,tridactylus,Long-nosed potoroo,Mammalia,Diprotodontia,Potoroidae
+Pseudocheirus_peregrinus,2.1301688889569537,10.1,0.8593,4.741408088513351,2.1301688889569537,Pseudocheirus,peregrinus,"Common ringtail, or Ring-tailed possum",Mammalia,Diprotodontia,Pseudocheiridae
+Lasiorhinus_latifrons,3.2676452714182367,29.9,27.348200000000002,9.150320036734795,3.2676452714182367,Lasiorhinus,latifrons,Southern hairy-nosed wombat,Mammalia,Diprotodontia,Vombatidae
+Atelerix_albiventris,2.7187836636673626,11.4,0.45,4.193051529750094,2.7187836636673626,Atelerix,albiventris,Four-toed hedgehog,Mammalia,Erinaceomorpha,Erinaceidae
+Erinaceus_concolor,1.4886148035455669,7.0,0.8227000000000001,4.702358181127498,1.4886148035455669,Erinaceus,concolor,Eastern European hedgehog,Mammalia,Erinaceomorpha,Erinaceidae
+Erinaceus_europaeus,2.310992209334827,11.7,1.2135,5.062760468313137,2.310992209334827,Erinaceus,europaeus,Western European hedgehog,Mammalia,Erinaceomorpha,Erinaceidae
+Hemiechinus_auritus,1.854865349900526,7.6,0.3985,4.097332456184799,1.854865349900526,Hemiechinus,auritus,Long-eared hedgehog,Mammalia,Erinaceomorpha,Erinaceidae
+Paraechinus_aethiopicus,1.5015360172952863,6.3,0.4515,4.195703551186322,1.5015360172952863,Paraechinus,aethiopicus,Desert hedgehog,Mammalia,Erinaceomorpha,Erinaceidae
+Procavia_capensis,2.5564148782751746,14.8,2.458,5.789357637437016,2.5564148782751746,Procavia,capensis,Rock hyrax,Mammalia,Hyracoidea,Procaviidae
+Lepus_californicus,2.0641150312247993,11.8,2.3,5.716735657410599,2.0641150312247993,Lepus,californicus,Black-tailed jackrabbit,Mammalia,Lagomorpha,Leporidae
+Lepus_timidus,2.9908992121266347,18.0,3.0145,6.018256959986748,2.9908992121266347,Lepus,timidus,Mountain hare,Mammalia,Lagomorpha,Leporidae
+Oryctolagus_cuniculus,2.2997258858250693,13.0,2.1679,5.65284761985275,2.2997258858250693,Oryctolagus,cuniculus,European rabbit,Mammalia,Lagomorpha,Leporidae
+Sylvilagus_audubonii,1.716583811685774,7.8,0.6869,4.54390863230849,1.716583811685774,Sylvilagus,audubonii,Audubon's cottontail rabbit,Mammalia,Lagomorpha,Leporidae
+Ochotona_princeps,2.185582393268524,7.0,0.109,3.2028076459435355,2.185582393268524,Ochotona,princeps,American pika,Mammalia,Lagomorpha,Ochotonidae
+Elephantulus_intufi,3.4138706785445563,9.3,0.0465,2.724180519914976,3.4138706785445563,Elephantulus,intufi,"Bushveld elephant shrew, or Long-eared elephant shrew",Mammalia,Macroscelidea,Macroscelididae
+Elephantulus_rozeti,2.616829452983773,7.2,0.049,2.751421187112666,2.616829452983773,Elephantulus,rozeti,North African elephant shrew,Mammalia,Macroscelidea,Macroscelididae
+Elephantulus_rufescens,2.8287518700137317,7.9,0.053,2.7927511365504287,2.8287518700137317,Elephantulus,rufescens,Rufous elephant shrew,Mammalia,Macroscelidea,Macroscelididae
+Macroscelides_proboscideus,3.3021527228132213,8.7,0.039,2.634644951426765,3.3021527228132213,Macroscelides,proboscideus,Short-eared elephant shrew,Mammalia,Macroscelidea,Macroscelididae
+Ornithorhynchus_anatinus,4.604956310416311,22.6,1.0303,4.907755573897475,4.604956310416311,Ornithorhynchus,anatinus,Duck-billed platypus,Mammalia,Monotremata,Ornithorhynchidae
+Tachyglossus_aculeatus,8.280833831399264,49.5,2.909,5.97765889375849,8.280833831399264,Tachyglossus,aculeatus,Short-beaked echidna,Mammalia,Monotremata,Tachyglossidae
+Zaglossus_bruijni,5.27813697723759,41.2,11.848600000000001,7.8057845367936585,5.27813697723759,Zaglossus,bruijni,"Western long-beaked echidna, or Long-nosed echidna",Mammalia,Monotremata,Tachyglossidae
+Echymipera_rufescens,0.6499405052888668,3.1,0.8866,4.769667338431541,0.6499405052888668,Echymipera,rufescens,Long-nosed echymipera,Mammalia,Peramelemorphia,Peramelidae
+Isoodon_auratus,1.6131719601834182,6.7,0.428,4.153307995285393,1.6131719601834182,Isoodon,auratus,Golden bandicoot,Mammalia,Peramelemorphia,Peramelidae
+Isoodon_macrourus,1.2819552023459921,6.8,1.551,5.304397523061589,1.2819552023459921,Isoodon,macrourus,Northern brown bandicoot,Mammalia,Peramelemorphia,Peramelidae
+Isoodon_obesulus,1.4188774776925515,6.5,0.717,4.58108617706063,1.4188774776925515,Isoodon,obesulus,Southern brown bandicoot,Mammalia,Peramelemorphia,Peramelidae
+Perameles_gunnii,1.339469719151152,6.1,0.695,4.5540409856115955,1.339469719151152,Perameles,gunnii,Eastern barred bandicoot,Mammalia,Peramelemorphia,Peramelidae
+Perameles_nasuta,1.2472452516440335,5.6,0.645,4.489894824308581,1.2472452516440335,Perameles,nasuta,Long-nosed bandicoot,Mammalia,Peramelemorphia,Peramelidae
+Macrotis_lagotis,1.8868444640865674,9.6,1.2455,5.087859748231774,1.8868444640865674,Macrotis,lagotis,"Rabbit-bandicoot, or Bilby",Mammalia,Peramelemorphia,Thylacomyidae
+Equus_asinus,3.6002308418811877,47.0,177.5,13.05471845117621,3.6002308418811877,Equus,asinus,African wild ass,Mammalia,Perissodactyla,Equidae
+Choloepus_hoffmanni,6.4545420620018845,41.0,4.005199999999999,6.352116014762447,6.4545420620018845,Choloepus,hoffmanni,Hoffmann's two-toed sloth,Mammalia,Pilosa,Megalonychidae
+Myrmecophaga_tridactyla,3.3163075588208315,31.0,30.6,9.347745783573393,3.3163075588208315,Myrmecophaga,tridactyla,Giant anteater,Mammalia,Pilosa,Myrmecophagidae
+Tamandua_mexicana,2.5335697187829735,16.0,3.8842,6.315200202063421,2.5335697187829735,Tamandua,mexicana,Northern tamandua,Mammalia,Pilosa,Myrmecophagidae
+Tamandua_tetradactyla,3.068745343870697,19.0,3.5,6.191455422636911,3.068745343870697,Tamandua,tetradactyla,Southern tamandua,Mammalia,Pilosa,Myrmecophagidae
+Aotus_trivirgatus,6.273671415634554,30.1,0.9145,4.797828576898065,6.273671415634554,Aotus,trivirgatus,Northern night monkey,Mammalia,Primates,Aotidae
+Alouatta_palliata,3.669620999576212,24.0,4.67,6.54018494083494,3.669620999576212,Alouatta,palliata,Mantled howler monkey,Mammalia,Primates,Atelidae
+Callithrix_jacchus,6.405482378987612,22.8,0.19,3.5594508970616427,6.405482378987612,Callithrix,jacchus,White-tufted-ear marmoset,Mammalia,Primates,Callitrichidae
+Cebuella_pygmaea,5.790353448194484,18.6,0.1107,3.212239143328936,5.790353448194484,Cebuella,pygmaea,Pygmy marmoset,Mammalia,Primates,Callitrichidae
+Saguinus_geoffroyi,5.577240348557432,20.5,0.225,3.6756529607518855,5.577240348557432,Saguinus,geoffroyi,Geoffroy's tamarin,Mammalia,Primates,Callitrichidae
+Saimiri_sciureus,6.401752280346473,30.2,0.8367,4.717458389121787,6.401752280346473,Saimiri,sciureus,South American squirrel monkey,Mammalia,Primates,Cebidae
+Cercopithecus_mitis,5.141043985386586,37.8,8.648700000000002,7.3525922181266035,5.141043985386586,Cercopithecus,mitis,Blue monkey,Mammalia,Primates,Cercopithecidae
+Colobus_guereza,4.577797708251361,35.0,10.6236,7.6455977809839455,4.577797708251361,Colobus,guereza,Guereza,Mammalia,Primates,Cercopithecidae
+Erythrocebus_patas,4.989400822737956,30.0,3.0,6.0127460322054,4.989400822737956,Erythrocebus,patas,Patas monkey,Mammalia,Primates,Cercopithecidae
+Papio_hamadryas,4.743279090259885,37.5,12.6708,7.905923157042267,4.743279090259885,Papio,hamadryas,Hamadryas baboon,Mammalia,Primates,Cercopithecidae
+Cheirogaleus_medius,7.4700780155830815,29.0,0.3,3.882154903804761,7.4700780155830815,Cheirogaleus,medius,Fat-tailed dwarf lemur,Mammalia,Primates,Cheirogaleidae
+Galago_moholi,4.763245556344433,16.6,0.17,3.4850187343143655,4.763245556344433,Galago,moholi,South African galago,Mammalia,Primates,Galagidae
+Galago_senegalensis,4.898533751724071,17.1,0.1715,3.4908404977268033,4.898533751724071,Galago,senegalensis,Senegal galago,Mammalia,Primates,Galagidae
+Galagoides_demidoff,4.651573678253209,13.4,0.0624,2.8807455125664183,4.651573678253209,Galagoides,demidoff,Demidoff's galago,Mammalia,Primates,Galagidae
+Otolemur_crassicaudatus,4.657406442741682,22.7,0.9935,4.873957271944073,4.657406442741682,Otolemur,crassicaudatus,"Brown greater galago, or Greater galago",Mammalia,Primates,Galagidae
+Otolemur_garnettii,3.891141770679981,20.0,1.314,5.1398795465899925,3.891141770679981,Otolemur,garnettii,Small-eared galago,Mammalia,Primates,Galagidae
+Homo_sapiens,11.198185028363056,122.5,70.0,10.939272720510404,11.198185028363056,Homo,sapiens,Human,Mammalia,Primates,Hominidae
+Propithecus_verreauxi,5.048744098093358,31.0,3.35,6.140140874184345,5.048744098093358,Propithecus,verreauxi,Verreaux's sifaka,Mammalia,Primates,Indriidae
+Eulemur_fulvus,6.172537250546321,35.5,2.3741,5.7512816138708525,6.172537250546321,Eulemur,fulvus,Brown lemur,Mammalia,Primates,Lemuridae
+Arctocebus_calabarensis,3.5965719962049416,13.0,0.206,3.614552972585406,3.5965719962049416,Arctocebus,calabarensis,Calabar angwantibo,Mammalia,Primates,Lorisidae
+Loris_tardigradus,5.622163153351001,21.6,0.284,3.841937597831124,5.622163153351001,Loris,tardigradus,"Red slender loris, or Slender loris",Mammalia,Primates,Lorisidae
+Nycticebus_coucang,5.166747942901195,25.8,1.1285999999999998,4.993469835401525,5.166747942901195,Nycticebus,coucang,Slow loris,Mammalia,Primates,Lorisidae
+Perodicticus_potto,6.679712029384223,32.4,0.9686,4.8505085035809286,6.679712029384223,Perodicticus,potto,Potto,Mammalia,Primates,Lorisidae
+Carlito_syrichta,4.961525826926386,16.0,0.113,3.224814413575639,4.961525826926386,Carlito,syrichta,Philippine tarsier,Mammalia,Primates,Tarsiidae
+Elephas_maximus,3.428954623224792,79.6,3672.0,23.21407214340429,3.428954623224792,Elephas,maximus,Asiatic elephant,Mammalia,Proboscidea,Elephantidae
+Cryptomys_damarensis,4.671341075317321,15.5,0.1313,3.318104961742083,4.671341075317321,Cryptomys,damarensis,Damaraland mole-rat,Mammalia,Rodentia,Bathyergidae
+Cryptomys_hottentotus,3.6519786720731413,11.0,0.07890000000000001,3.0120657834388616,3.6519786720731413,Cryptomys,hottentotus,African mole rat,Mammalia,Rodentia,Bathyergidae
+Georychus_capensis,3.1372007629492393,11.2,0.193,3.5700616078746052,3.1372007629492393,Georychus,capensis,Cape mole-rat,Mammalia,Rodentia,Bathyergidae
+Heterocephalus_glaber,11.991256083501042,31.0,0.0353,2.585217076854308,11.991256083501042,Heterocephalus,glaber,Naked mole-rat,Mammalia,Rodentia,Bathyergidae
+Capromys_pilorides,2.353247858724375,13.8,2.63,5.86423565577175,2.353247858724375,Capromys,pilorides,Desmarest's hutia,Mammalia,Rodentia,Capromyidae
+Geocapromys_brownii,2.3322255972507864,13.5,2.456,5.788462323676457,2.3322255972507864,Geocapromys,brownii,Brown's hutia,Mammalia,Rodentia,Capromyidae
+Cavia_porcellus,2.6773389040226925,12.0,0.6391,4.482062387383996,2.6773389040226925,Cavia,porcellus,Guinea pig,Mammalia,Rodentia,Caviidae
+Galea_musteloides,0.8895197736800101,3.5,0.322,3.9347073595904867,0.8895197736800101,Galea,musteloides,Common yellow-toothed cavy,Mammalia,Rodentia,Caviidae
+Hydrochoerus_hydrochaeris,1.6614959101236937,15.1,26.385,9.088195708453984,1.6614959101236937,Hydrochoerus,hydrochaeris,Capybara,Mammalia,Rodentia,Caviidae
+Chinchilla_lanigera,4.125473658375949,17.2,0.4367,4.169218233906024,4.125473658375949,Chinchilla,lanigera,Long-tailed chinchilla,Mammalia,Rodentia,Chinchillidae
+Lagostomus_maximus,1.5378007925806023,10.8,6.794,7.02301627890072,1.5378007925806023,Lagostomus,maximus,Plains viscacha,Mammalia,Rodentia,Chinchillidae
+Arvicola_amphibius,0.8017033358104514,2.5,0.0947,3.118360481153194,0.8017033358104514,Arvicola,amphibius,European water vole,Mammalia,Rodentia,Cricetidae
+Baiomys_taylori,1.7266366040499026,3.3,0.0072,1.9112301872088797,1.7266366040499026,Baiomys,taylori,Northern pygmy mouse,Mammalia,Rodentia,Cricetidae
+Cricetus_cricetus,0.8932627854109929,3.6,0.3653,4.030169014982113,0.8932627854109929,Cricetus,cricetus,Black-bellied hamster,Mammalia,Rodentia,Cricetidae
+Dicrostonyx_groenlandicus,1.166186297137111,3.3,0.056799999999999996,2.829736559331233,1.166186297137111,Dicrostonyx,groenlandicus,Collared lemming,Mammalia,Rodentia,Cricetidae
+Lasiopodomys_brandtii,1.5472521136157042,4.1,0.0402,2.649859039726172,1.5472521136157042,Lasiopodomys,brandtii,Brandt's vole,Mammalia,Rodentia,Cricetidae
+Lemmus_lemmus,1.0927152907294586,3.3,0.08,3.0199998371003254,1.0927152907294586,Lemmus,lemmus,Norway lemming,Mammalia,Rodentia,Cricetidae
+Mesocricetus_auratus,1.2193871258466695,3.9,0.1082,3.1983280103044165,1.2193871258466695,Mesocricetus,auratus,Golden hamster,Mammalia,Rodentia,Cricetidae
+Microtus_agrestis,1.9824982550113481,4.8,0.025,2.4211875031246994,1.9824982550113481,Microtus,agrestis,Field vole,Mammalia,Rodentia,Cricetidae
+Microtus_arvalis,2.032998384605107,4.8,0.0219,2.3610446699554855,2.032998384605107,Microtus,arvalis,Common vole,Mammalia,Rodentia,Cricetidae
+Microtus_guentheri,1.4479871374890139,3.9,0.0438,2.6933940910297554,1.4479871374890139,Microtus,guentheri,Guenther's vole,Mammalia,Rodentia,Cricetidae
+Microtus_ochrogaster,1.9323113744402578,5.3,0.0482,2.7428291682727775,1.9323113744402578,Microtus,ochrogaster,Prairie vole,Mammalia,Rodentia,Cricetidae
+Microtus_pinetorum,1.571874813678508,3.8,0.0248,2.4174953163777873,1.571874813678508,Microtus,pinetorum,Woodland vole,Mammalia,Rodentia,Cricetidae
+Myodes_glareolus,2.0826339830383755,4.9,0.0215,2.352789803636711,2.0826339830383755,Myodes,glareolus,Bank vole,Mammalia,Rodentia,Cricetidae
+Neotoma_albigula,2.7033957120715124,9.5,0.1776,3.5140989377098997,2.7033957120715124,Neotoma,albigula,White-throated woodrat,Mammalia,Rodentia,Cricetidae
+Neotoma_lepida,3.258745900257201,10.5,0.1125,3.222098414967326,3.258745900257201,Neotoma,lepida,Desert woodrat,Mammalia,Rodentia,Cricetidae
+Ochrotomys_nuttalli,3.6370802859434623,8.4,0.0195,2.3095448380571098,3.6370802859434623,Ochrotomys,nuttalli,Golden mouse,Mammalia,Rodentia,Cricetidae
+Onychomys_torridus,1.999593286192964,4.6,0.019100000000000002,2.300467816011707,1.999593286192964,Onychomys,torridus,Southern grasshopper mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_californicus,2.014857213406981,5.5,0.047,2.7297219690818135,2.014857213406981,Peromyscus,californicus,California mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_crinitus,3.302460787072426,7.7,0.0205,2.331594679380256,3.302460787072426,Peromyscus,crinitus,Canyon mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_eremicus,3.159295375141079,7.4,0.021,2.3422944426870984,3.159295375141079,Peromyscus,eremicus,Cactus mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_leucopus,3.33448943170496,7.9,0.0223,2.3691782990479133,3.33448943170496,Peromyscus,leucopus,White-footed mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_maniculatus,3.55979539385729,8.3,0.0205,2.331594679380256,3.55979539385729,Peromyscus,maniculatus,Deer mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_polionotus,2.6115505148010536,5.5,0.012,2.1060285714668576,2.6115505148010536,Peromyscus,polionotus,Oldfield mouse,Mammalia,Rodentia,Cricetidae
+Peromyscus_truei,2.114494788035847,5.4,0.033100000000000004,2.553801518241649,2.114494788035847,Peromyscus,truei,Pinyon mouse,Mammalia,Rodentia,Cricetidae
+Phodopus_sungorus,1.5434457203554819,3.9,0.0313,2.526813835151756,1.5434457203554819,Phodopus,sungorus,Dzhungarian hamster,Mammalia,Rodentia,Cricetidae
+Podomys_floridanus,2.937563488242856,7.4,0.0308,2.5190944909335093,2.937563488242856,Podomys,floridanus,Florida mouse,Mammalia,Rodentia,Cricetidae
+Reithrodon_auritus,1.826870102092877,5.5,0.0787,3.010613613797257,1.826870102092877,Reithrodon,auritus,"Bunny, or Coney rat",Mammalia,Rodentia,Cricetidae
+Sigmodon_hispidus,1.510105443582564,5.2,0.1596,3.443468151246151,1.510105443582564,Sigmodon,hispidus,Hispid cotton rat,Mammalia,Rodentia,Cricetidae
+Cuniculus_paca,2.193025509376008,16.3,9.156,7.432654080087703,2.193025509376008,Cuniculus,paca,Lowland paca,Mammalia,Rodentia,Cuniculidae
+Dasyprocta_azarae,1.8717424163593164,11.8,3.849,6.30428626122173,1.8717424163593164,Dasyprocta,azarae,Azara's agouti,Mammalia,Rodentia,Dasyproctidae
+Dasyprocta_leporina,3.023008189334192,17.8,2.687,5.888174588081548,3.023008189334192,Dasyprocta,leporina,"Red-rumped agouti, or Agouti",Mammalia,Rodentia,Dasyproctidae
+Myoprocta_acouchy,3.08504935415685,14.8,0.914,4.797330058936729,3.08504935415685,Myoprocta,acouchy,Red acouchi,Mammalia,Rodentia,Dasyproctidae
+Jaculus_jaculus,2.4470418569376777,7.3,0.075,2.9831937607865444,2.4470418569376777,Jaculus,jaculus,Lesser Egyptian jerboa,Mammalia,Rodentia,Dipodidae
+Jaculus_orientalis,1.6397213651210396,5.5,0.139,3.3542284177007144,1.6397213651210396,Jaculus,orientalis,Greater Egyptian jerboa,Mammalia,Rodentia,Dipodidae
+Zapus_hudsonius,2.2940691707700838,5.6,0.0261,2.44107722267161,2.2940691707700838,Zapus,hudsonius,Meadow jumping mouse,Mammalia,Rodentia,Dipodidae
+Proechimys_semispinosus,1.3568586150311477,5.8,0.498,4.274579485104907,1.3568586150311477,Proechimys,semispinosus,"Tome's spiny rat, or Spiny rat",Mammalia,Rodentia,Echimyidae
+Thrichomys_apereoides,1.777991738885072,7.0,0.323,3.937026166606095,1.777991738885072,Thrichomys,apereoides,"Common punare, or Brazilian spiny rat",Mammalia,Rodentia,Echimyidae
+Coendou_prehensilis,4.349564589257932,26.6,3.28,6.115554661653652,4.349564589257932,Coendou,prehensilis,Prehensile-tailed porcupine,Mammalia,Rodentia,Erethizontidae
+Erethizon_dorsatus,3.324774884311391,23.4,6.871,7.038070490251095,3.324774884311391,Erethizon,dorsatus,North American porcupine,Mammalia,Rodentia,Erethizontidae
+Geomys_bursarius,3.3482111711867715,12.0,0.197,3.584003333859796,3.3482111711867715,Geomys,bursarius,Plains pocket gopher,Mammalia,Rodentia,Geomyidae
+Thomomys_bottae,1.8088233926197121,6.1,0.143,3.372357978611385,1.8088233926197121,Thomomys,bottae,Botta's pocket gopher,Mammalia,Rodentia,Geomyidae
+Glis_glis,2.4843089233638405,8.7,0.1744,3.501979934210395,2.4843089233638405,Glis,glis,Fat dormouse,Mammalia,Rodentia,Gliridae
+Muscardinus_avellanarius,2.2148950561937015,5.3,0.0235,2.3928898956991906,2.2148950561937015,Muscardinus,avellanarius,Hazel dormouse,Mammalia,Rodentia,Gliridae
+Chaetodipus_fallax,3.5902907222846334,8.3,0.019600000000000003,2.311790504452076,3.5902907222846334,Chaetodipus,fallax,San Diego pocket mouse,Mammalia,Rodentia,Heteromyidae
+Chaetodipus_formosus,3.2272522089183893,7.1,0.015099999999999999,2.2000139872487865,3.2272522089183893,Chaetodipus,formosus,Long-tailed pocket mouse,Mammalia,Rodentia,Heteromyidae
+Dipodomys_heermanni,2.873370081772161,8.3,0.0633,2.888594146870544,2.873370081772161,Dipodomys,heermanni,Heermann's kangaroo rat,Mammalia,Rodentia,Heteromyidae
+Dipodomys_merriami,3.707372479192641,9.7,0.0376,2.616408266080774,3.707372479192641,Dipodomys,merriami,Merriam's kangaroo rat,Mammalia,Rodentia,Heteromyidae
+Dipodomys_ordii,3.6151312744816755,9.9,0.047799999999999995,2.7384897665768517,3.6151312744816755,Dipodomys,ordii,Ord's kangaroo rat,Mammalia,Rodentia,Heteromyidae
+Perognathus_longimembris,4.207931626633531,8.3,0.0085,1.9724655095311625,4.207931626633531,Perognathus,longimembris,Little pocket mouse,Mammalia,Rodentia,Heteromyidae
+Perognathus_parvus,2.5187260744183675,5.8,0.0192,2.3027514023490445,2.5187260744183675,Perognathus,parvus,Great Basin pocket mouse,Mammalia,Rodentia,Heteromyidae
+Hystrix_africaeaustralis,2.986119981858882,23.1,11.3,7.735790973013776,2.986119981858882,Hystrix,africaeaustralis,Cape porcupine,Mammalia,Rodentia,Hystricidae
+Acomys_cahirinus,2.2080801036402917,5.9,0.042,2.6720045120976925,2.2080801036402917,Acomys,cahirinus,Spiny mouse,Mammalia,Rodentia,Muridae
+Apodemus_flavicollis,1.8153203200740609,4.5,0.028300000000000002,2.478901354344125,1.8153203200740609,Apodemus,flavicollis,Yellow-necked mouse,Mammalia,Rodentia,Muridae
+Apodemus_sylvaticus,2.6264619023644276,6.3,0.0238,2.3986641475090624,2.6264619023644276,Apodemus,sylvaticus,Long-tailed field mouse,Mammalia,Rodentia,Muridae
+Conilurus_penicillatus,1.2368673450138499,4.5,0.2132,3.638223628540869,1.2368673450138499,Conilurus,penicillatus,Brush-tailed rabbit rat,Mammalia,Rodentia,Muridae
+Desmodillus_auricularis,2.061254058875299,6.1,0.0719,2.9593634873560415,2.061254058875299,Desmodillus,auricularis,Cape short-eared gerbil,Mammalia,Rodentia,Muridae
+Gerbilliscus_afra,1.7875516866987722,5.7,0.1065,3.1887189849747437,1.7875516866987722,Gerbilliscus,afra,Cape gerbil,Mammalia,Rodentia,Muridae
+Gerbillus_gerbillus,2.3583511163854953,5.9,0.0297,2.5017479199800325,2.3583511163854953,Gerbillus,gerbillus,Lesser Egyptian gerbil,Mammalia,Rodentia,Muridae
+Gerbillus_nanus,1.7987423769041913,4.5,0.0297,2.5017479199800325,1.7987423769041913,Gerbillus,nanus,Baluchistan gerbil,Mammalia,Rodentia,Muridae
+Gerbillus_perpallidus,1.9469117781957306,5.5,0.056299999999999996,2.8249867619050706,1.9469117781957306,Gerbillus,perpallidus,Pale gerbil,Mammalia,Rodentia,Muridae
+Gerbillus_pyramidum,2.562491185222553,8.2,0.1085,3.2000110077599455,2.562491185222553,Gerbillus,pyramidum,Greater Egyptian gerbil,Mammalia,Rodentia,Muridae
+Hydromys_chrysogaster,1.526149087413779,7.3,0.9,4.783281043905495,1.526149087413779,Hydromys,chrysogaster,Golden-bellied water rat,Mammalia,Rodentia,Muridae
+Meriones_unguiculatus,2.171308219218499,6.3,0.0648,2.901476604858755,2.171308219218499,Meriones,unguiculatus,Mongolian jird,Mammalia,Rodentia,Muridae
+Micaelamys_namaquensis,1.6305304462360297,4.7,0.0626,2.882497539895459,1.6305304462360297,Micaelamys,namaquensis,"Namaqua rock rat, or Rock mouse",Mammalia,Rodentia,Muridae
+Micromys_minutus,1.9679279415395683,3.8,0.0076,1.9309650113647694,1.9679279415395683,Micromys,minutus,Old World harvest mouse,Mammalia,Rodentia,Muridae
+Mus_minutoides,2.205268814755378,4.3,0.008,1.9498756665077959,2.205268814755378,Mus,minutoides,"Southern African pygmy mouse, or Pygmy mouse",Mammalia,Rodentia,Muridae
+Mus_musculus,1.7584838875173372,4.0,0.018,2.2746867505549226,1.7584838875173372,Mus,musculus,House mouse,Mammalia,Rodentia,Muridae
+Notomys_alexis,2.517744597462218,6.4,0.032299999999999995,2.5419575942893236,2.517744597462218,Notomys,alexis,Spinifex hopping mouse,Mammalia,Rodentia,Muridae
+Rattus_fuscipes,1.7721540233735735,5.3,0.076,2.990710700140283,1.7721540233735735,Rattus,fuscipes,Bush rat,Mammalia,Rodentia,Muridae
+Rattus_lutreolus,1.373794647197358,4.4,0.109,3.2028076459435355,1.373794647197358,Rattus,lutreolus,Australian swamp rat,Mammalia,Rodentia,Muridae
+Rattus_norvegicus,1.0504352360117837,3.8,0.2069,3.617548107418373,1.0504352360117837,Rattus,norvegicus,Norway rat,Mammalia,Rodentia,Muridae
+Rattus_rattus,1.2938208771730677,4.2,0.117,3.246198970893703,1.2938208771730677,Rattus,rattus,Rat,Mammalia,Rodentia,Muridae
+Rhabdomys_pumilio,1.7030625791923004,4.5,0.0396,2.6422986770892374,1.7030625791923004,Rhabdomys,pumilio,Four-striped grass mouse,Mammalia,Rodentia,Muridae
+Sekeetamys_calurus,2.524911649782847,7.3,0.0636,2.8911902721934175,2.524911649782847,Sekeetamys,calurus,Bushy-tailed jird,Mammalia,Rodentia,Muridae
+Tatera_indica,2.281731092700269,7.0,0.0869,3.067846172756488,2.281731092700269,Tatera,indica,Indian gerbil,Mammalia,Rodentia,Muridae
+Cricetomys_gambianus,1.5585555052131976,8.4,1.6867,5.389605934407161,1.5585555052131976,Cricetomys,gambianus,Gambian rat,Mammalia,Rodentia,Nesomyidae
+Mystromys_albicaudatus,2.023961225533737,6.3,0.0938,3.112707852562063,2.023961225533737,Mystromys,albicaudatus,White-tailed mouse,Mammalia,Rodentia,Nesomyidae
+Saccostomus_campestris,1.5363661871712921,4.5,0.0681,2.9289892198716343,1.5363661871712921,Saccostomus,campestris,Pouched mouse,Mammalia,Rodentia,Nesomyidae
+Octodon_degus,3.896527195009948,14.0,0.1996,3.5929429718670955,3.896527195009948,Octodon,degus,Degu,Mammalia,Rodentia,Octodontidae
+Spalacopus_cyanus,3.279462400747119,10.8,0.1262,3.2932226933108217,3.279462400747119,Spalacopus,cyanus,Coruro,Mammalia,Rodentia,Octodontidae
+Pedetes_capensis,3.4985000529233883,20.0,2.3,5.716735657410599,3.4985000529233883,Pedetes,capensis,"South African springhare, or Springhare",Mammalia,Rodentia,Pedetidae
+Ammospermophilus_leucurus,3.5959709299847162,11.2,0.09409999999999999,3.114596924744217,3.5959709299847162,Ammospermophilus,leucurus,White-tailed antelope squirrel,Mammalia,Rodentia,Sciuridae
+Callospermophilus_lateralis,2.7741953976274423,10.4,0.2496,3.7488347103792066,2.7741953976274423,Callospermophilus,lateralis,Golden-mantled ground squirrel,Mammalia,Rodentia,Sciuridae
+Cynomys_ludovicianus,3.012237903216552,15.0,1.1122999999999998,4.979686360092136,3.012237903216552,Cynomys,ludovicianus,Black-tailed prairie dog,Mammalia,Rodentia,Sciuridae
+Funisciurus_anerythrus,3.4650178291317766,10.0,0.063,2.8859880361728707,3.4650178291317766,Funisciurus,anerythrus,Thomas's rope squirrel,Mammalia,Rodentia,Sciuridae
+Glaucomys_volans,6.499626468745691,19.0,0.0674,2.923244911282825,6.499626468745691,Glaucomys,volans,Southern flying squirrel,Mammalia,Rodentia,Sciuridae
+Heliosciurus_rufobrachium,2.357062735106763,8.7,0.23,3.6910345534803652,2.357062735106763,Heliosciurus,rufobrachium,Red-legged sun squirrel,Mammalia,Rodentia,Sciuridae
+Ictidomys_tridecemlineatus,2.201275258970497,7.9,0.1984,3.5888287790481552,2.201275258970497,Ictidomys,tridecemlineatus,Thirteen-lined ground squirrel,Mammalia,Rodentia,Sciuridae
+Marmota_flaviventris,3.2934648821942307,21.2,4.295,6.436989844529862,3.2934648821942307,Marmota,flaviventris,Yellow-bellied marmot,Mammalia,Rodentia,Sciuridae
+Marmota_monax,2.3839190143863225,14.0,2.65,5.872682719301156,2.3839190143863225,Marmota,monax,Woodchuck,Mammalia,Rodentia,Sciuridae
+Poliocitellus_franklinii,1.6222090619721685,7.2,0.607,4.438392170764194,1.6222090619721685,Poliocitellus,franklinii,Franklin's ground squirrel,Mammalia,Rodentia,Sciuridae
+Sciurus_carolinensis,5.652442751146942,23.6,0.44,4.175186028237315,5.652442751146942,Sciurus,carolinensis,Eastern gray squirrel,Mammalia,Rodentia,Sciuridae
+Spermophilus_citellus,1.8005900452506198,6.7,0.24,3.7210024667594133,1.8005900452506198,Spermophilus,citellus,European ground squirrel,Mammalia,Rodentia,Sciuridae
+Tamias_minimus,3.6302728136795075,10.0,0.0493,2.7546139128492597,3.6302728136795075,Tamias,minimus,Least chipmunk,Mammalia,Rodentia,Sciuridae
+Tamias_striatus,3.078685040596809,9.5,0.0896,3.085732991432734,3.078685040596809,Tamias,striatus,Eastern chipmunk,Mammalia,Rodentia,Sciuridae
+Xerospermophilus_mohavensis,2.0962093064111693,7.8,0.24,3.7210024667594133,2.0962093064111693,Xerospermophilus,mohavensis,Mohave ground squirrel,Mammalia,Rodentia,Sciuridae
+Cannomys_badius,1.2046900165283627,4.8,0.344,3.9844274744074717,1.2046900165283627,Cannomys,badius,Lesser bamboo rat,Mammalia,Rodentia,Spalacidae
+Spalax_ehrenbergi,6.066034638296059,20.2,0.1338,3.3300172525348706,6.066034638296059,Spalax,ehrenbergi,Palestine mole rat,Mammalia,Rodentia,Spalacidae
+Tupaia_glis,3.7837278533144114,12.4,0.123,3.277191299352579,3.7837278533144114,Tupaia,glis,Common tree shrew,Mammalia,Scandentia,Tupaiidae
+Urogale_everetti,3.042586123258264,11.5,0.2606,3.7796793694979476,3.042586123258264,Urogale,everetti,Mindanao tree shrew,Mammalia,Scandentia,Tupaiidae
+Trichechus_inunguis,3.097640834228455,40.0,167.594,12.913052913690365,3.097640834228455,Trichechus,inunguis,Amazonian manatee,Mammalia,Sirenia,Trichechidae
+Trichechus_manatus,4.42913472809207,69.0,450.0,15.578663607219509,4.42913472809207,Trichechus,manatus,West Indian manatee,Mammalia,Sirenia,Trichechidae
+Blarina_brevicauda,0.9401021901525878,2.2,0.0209,2.340171125059201,0.9401021901525878,Blarina,brevicauda,Northern short-tailed shrew,Mammalia,Soricomorpha,Soricidae
+Crocidura_flavescens,0.8609672323712478,2.2,0.0332,2.5552656562095075,0.8609672323712478,Crocidura,flavescens,Greater red musk shrew,Mammalia,Soricomorpha,Soricidae
+Crocidura_leucodon,1.3836392146996563,2.9,0.011699999999999999,2.095922093845466,1.3836392146996563,Crocidura,leucodon,Bicolored shrew,Mammalia,Soricomorpha,Soricidae
+Crocidura_russula,1.937713905086449,4.0,0.0108,2.064288226192785,1.937713905086449,Crocidura,russula,White-toothed shrew,Mammalia,Soricomorpha,Soricidae
+Crocidura_suaveolens,1.4769196955793518,2.8,0.006900000000000001,1.8958376737617022,1.4769196955793518,Crocidura,suaveolens,Lesser shrew,Mammalia,Soricomorpha,Soricidae
+Cryptotis_parva,1.8783370195055704,3.5,0.0063,1.8633503804984346,1.8783370195055704,Cryptotis,parva,Least shrew,Mammalia,Soricomorpha,Soricidae
+Neomys_fodiens,1.3936671874810762,3.1,0.016,2.2243474108068524,1.3936671874810762,Neomys,fodiens,Eurasian water shrew,Mammalia,Soricomorpha,Soricidae
+Sorex_araneus,1.6259870858881527,3.2,0.008400000000000001,1.9680353108414046,1.6259870858881527,Sorex,araneus,Eurasian shrew,Mammalia,Soricomorpha,Soricidae
+Suncus_etruscus,2.0629562623073343,3.2,0.0024,1.5511720042095938,2.0629562623073343,Suncus,etruscus,White-toothed pygmy shrew,Mammalia,Soricomorpha,Soricidae
+Suncus_murinus,1.210486527076287,3.2,0.039700000000000006,2.643565152045951,1.210486527076287,Suncus,murinus,Asian house shrew,Mammalia,Soricomorpha,Soricidae
+Condylura_cristata,0.9086213378415877,2.5,0.049,2.751421187112666,0.9086213378415877,Condylura,cristata,Star-nosed mole,Mammalia,Soricomorpha,Talpidae
+Scalopus_aquaticus,2.2622262235855968,6.2,0.048,2.740663128806405,2.2622262235855968,Scalopus,aquaticus,Eastern mole,Mammalia,Soricomorpha,Talpidae
+Orycteropus_afer,2.926581392436713,29.8,48.0,10.182529034392616,2.926581392436713,Orycteropus,afer,Aardvark,Mammalia,Tubulidentata,Orycteropodidae

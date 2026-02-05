@@ -1,107 +1,116 @@
 #!/usr/bin/env python3
 """
-Script 3: AnAge to LQ Pipeline
-
-1. Reads raw anage_data.txt (Tab-delimited)
-2. Cleans and converts units (Grams to KG)
-3. Calculates Longevity Quotient (LQ)
-4. Saves top 4 and bottom 4 species to fetch_targets.txt
+Script 3: AnAge to LQ Pipeline (With Validation Support)
+Creates lq_results.csv with proper column names for CAAS validation
 """
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from pathlib import Path
 import argparse
 
 def calculate_expected_lifespan(body_mass_kg, taxon_class):
-    """
-    Calculates expected lifespan. 
-    Note: The constants 4.88 and 0.19 are standard for Mammals.
-    """
+    # Constants for Mammals
     return 4.88 * (body_mass_kg ** 0.19)
 
 def main():
     parser = argparse.ArgumentParser(description='Convert AnAge TXT to LQ Targets')
     parser.add_argument('-i', '--input', default='data/anage_data.txt', help='Path to anage_data.txt')
-    parser.add_argument('-c', '--class_filter', default='Mammalia', help='Taxonomic class (e.g., Mammalia, Aves)')
+    parser.add_argument('-c', '--class_filter', default='Mammalia', help='Taxonomic class')
     parser.add_argument('-o', '--output_dir', default='data/LQ', help='Output directory')
     args = parser.parse_args()
 
     # 1. READ AND CLEAN
-    # AnAge is tab-separated. We use low_memory=False to handle mixed types.
     df_raw = pd.read_csv(args.input, sep='\t', low_memory=False)
 
-    # Filter by Class if specified
     if args.class_filter:
         df = df_raw[df_raw['Class'] == args.class_filter].copy()
     else:
         df = df_raw.copy()
 
-    # Create IDs and handle units
-    # We combine Genus and Species to match NCBI format (e.g., Homo_sapiens)
     df['species_id'] = df['Genus'] + '_' + df['Species']
-    df['species_name'] = df['Common name']
-    
-    # Map AnAge columns to our variables
-    # We divide Body mass (g) by 1000 to get KG for the formula
     df['max_lifespan_years'] = pd.to_numeric(df['Maximum longevity (yrs)'], errors='coerce')
     df['body_mass_kg'] = pd.to_numeric(df['Body mass (g)'], errors='coerce') / 1000
 
-    # Remove rows with missing critical data
     df = df.dropna(subset=['max_lifespan_years', 'body_mass_kg'])
 
     # 2. CALCULATE LQ
     df['expected_mls'] = df.apply(lambda x: calculate_expected_lifespan(x['body_mass_kg'], x['Class']), axis=1)
     df['LQ'] = df['max_lifespan_years'] / df['expected_mls']
+    
+    # CRITICAL: Create longevity_quotient column for validation script
+    df['longevity_quotient'] = df['LQ']
 
-    # 3. CLASSIFY
-    top_t = df['LQ'].quantile(0.9)
-    bot_t = df['LQ'].quantile(0.1)
+    # 3. SELECT SPECIES GROUPS
+    # Sort by LQ to pick outliers and middle species
+    df_sorted = df.sort_values('LQ', ascending=False)
 
-    def classify(lq):
-        if lq >= top_t: return 'long-lived'
-        elif lq <= bot_t: return 'short-lived'
-        return 'intermediate'
-    df['longevity_class'] = df['LQ'].apply(classify)
+
+    amoundOfSpeciesInEachGroup = 4
+
+    # Group 1: Top 4 (Long-lived)
+    top4 = df_sorted.head(amoundOfSpeciesInEachGroup)['species_id'].tolist()
+    
+    # Group 2: Bottom 4 (Short-lived)
+    bot4 = df_sorted.tail(amoundOfSpeciesInEachGroup)['species_id'].tolist()
+    
+    # Group 3: Validation (4 species from the middle)
+    # We take them from the center of the sorted list so they aren't outliers
+    mid_index = len(df_sorted) // 2
+    val4 = df_sorted.iloc[mid_index-2*amoundOfSpeciesInEachGroup : mid_index+2*amoundOfSpeciesInEachGroup]['species_id'].tolist()
 
     # 4. SAVE FILES
     out_dir = Path(args.output_dir)
     out_dir.mkdir(exist_ok=True, parents=True)
 
-    # 1. Get the lists
-    top4 = df.nlargest(4, 'LQ')['species_id'].tolist()
-    bot4 = df.nsmallest(4, 'LQ')['species_id'].tolist()
+    # Save the full processed CSV with required columns for validation
+    # Keep all columns but ensure species_id and longevity_quotient are present
+    output_cols = ['species_id', 'longevity_quotient', 'max_lifespan_years', 
+                   'body_mass_kg', 'expected_mls', 'LQ', 'Genus', 'Species', 
+                   'Common name', 'Class', 'Order', 'Family']
     
-    # 2. Save the combined list for the downloader
-    with open(out_dir / "fetch_targets.txt", 'w') as f:
-        f.write('\n'.join(top4 + bot4))
+    # Only include columns that exist in the dataframe
+    output_cols = [col for col in output_cols if col in df.columns]
+    
+    df[output_cols].to_csv(out_dir / 'lq_results.csv', index=False)
 
-    # 3. Save the separate lists for the comparison script
+    # fetch_targets.txt: Combine ALL 12 species so the downloader gets all of them
+    # This ensures your alignments will have all 12 species.
+    all_12 = top4 + bot4 + val4
+    with open(out_dir / "fetch_targets.txt", 'w') as f:
+        f.write('\n'.join(all_12))
+
+    # long_lived_targets.txt: Used for discovery
     with open(out_dir / "long_lived_targets.txt", 'w') as f:
         f.write('\n'.join(top4))
         
+    # short_lived_targets.txt: Used for discovery
     with open(out_dir / "short_lived_targets.txt", 'w') as f:
         f.write('\n'.join(bot4))
 
-    # # Save categorical lists
-    # for cat in ['long-lived', 'short-lived']:
-    #     ids = df[df['longevity_class'] == cat]['species_id'].tolist()
-    #     with open(out_dir / f"{cat}_species.txt", 'w') as f:
-    #         f.write('\n'.join(ids))
+    # validation_targets.txt: Strictly for reference
+    with open(out_dir / "validation_targets.txt", 'w') as f:
+        f.write('\n'.join(val4))
 
-    # # 5. PLOT
-    # plt.figure(figsize=(10, 6))
-    # plt.scatter(df['body_mass_kg'], df['max_lifespan_years'], c='gray', alpha=0.3)
-    # plt.scatter(df.nlargest(4, 'LQ')['body_mass_kg'], df.nlargest(4, 'LQ')['max_lifespan_years'], c='green', label='Top 4 LQ')
-    # plt.scatter(df.nsmallest(4, 'LQ')['body_mass_kg'], df.nsmallest(4, 'LQ')['max_lifespan_years'], c='red', label='Bottom 4 LQ')
-    # plt.xscale('log'); plt.yscale('log')
-    # plt.xlabel('Mass (kg)'); plt.ylabel('Lifespan (years)')
-    # plt.title(f'Longevity Outliers in {args.class_filter}')
-    # plt.legend()
-    # plt.savefig(out_dir / 'lq_chart.png')
-
-    # print(f"Done! Targets saved to {out_dir}/fetch_targets.txt")
+    print(f"Success! Created target files in {out_dir}")
+    print(f"Total species to download: {len(all_12)}")
+    print(f"Discovery: 4 Long vs 4 Short")
+    print(f"Validation: 4 Middle-lived species")
+    print(f"\nCreated lq_results.csv with columns:")
+    print(f"  - species_id: {df['species_id'].nunique()} species")
+    print(f"  - longevity_quotient: range {df['longevity_quotient'].min():.2f} to {df['longevity_quotient'].max():.2f}")
+    print(f"\nLong-lived species (High LQ):")
+    for sp in top4:
+        lq_val = df[df['species_id'] == sp]['longevity_quotient'].values[0]
+        print(f"  {sp}: LQ = {lq_val:.2f}")
+    print(f"\nShort-lived species (Low LQ):")
+    for sp in bot4:
+        lq_val = df[df['species_id'] == sp]['longevity_quotient'].values[0]
+        print(f"  {sp}: LQ = {lq_val:.2f}")
+    print(f"\nValidation species (Middle LQ):")
+    for sp in val4:
+        lq_val = df[df['species_id'] == sp]['longevity_quotient'].values[0]
+        print(f"  {sp}: LQ = {lq_val:.2f}")
 
 if __name__ == "__main__":
     main()

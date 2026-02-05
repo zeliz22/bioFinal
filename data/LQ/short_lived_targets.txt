@@ -1,4 +1,4 @@
-Lutreolina_crassicaudata
-Echymipera_rufescens
-Metachirus_nudicaudatus
 Arvicola_amphibius
+Metachirus_nudicaudatus
+Echymipera_rufescens
+Lutreolina_crassicaudata

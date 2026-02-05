@@ -2051,7 +2051,6 @@ HAGRID	Kingdom	Phylum	Class	Order	Family	Genus	Species	Common name	Female maturi
 02064	Animalia	Chordata	Mammalia	Artiodactyla	Tayassuidae	Tayassu	pecari	White-lipped peccary	548	548	158	50	2			700		22000		28.5	671	captivity	medium	acceptable					311.65	434,455,542,610,671,1010
 02065	Animalia	Chordata	Mammalia	Artiodactyla	Tragulidae	Hyemoschus	aquaticus	Water chevrotain	403	403	175	180	1.25	1				11000				unknown	small	low						434,455,573,610,680
 02066	Animalia	Chordata	Mammalia	Artiodactyla	Tragulidae	Moschiola	meminna	Indian spotted chevrotain			150		1.5			319		2450		14.5	671	captivity	small	acceptable						434,455,610,671
-02067	Animalia	Chordata	Mammalia	Artiodactyla	Tragulidae	Tragulus	javanicus	Lesser mouse-deer	167	167	144	84	1			370		2850		14	671	captivity	medium	acceptable			4.883	1615.5	311.55	36,434,455,542,610,671,677,680,951,978,1032
 02068	Animalia	Chordata	Mammalia	Artiodactyla	Tragulidae	Tragulus	napu	Greater mouse-deer	137	135	153	91	1	1	152	373		6500		16.7	671	captivity	medium	acceptable						434,455,610,671,677,978
 02069	Animalia	Chordata	Mammalia	Carnivora	Ailuridae	Ailurus	fulgens	Red panda	550	550	116	137	2	1	365	100	1140	4325	0.009	19	671	captivity	large	high			4.898	5740	310.75	36,420,434,455,610,671,680,731,1136
 02070	Animalia	Chordata	Mammalia	Carnivora	Canidae	Atelocynus	microtis	Short-eared dog										9500		11.9	671	captivity	small	acceptable						434,671
@@ -2452,7 +2451,6 @@ HAGRID	Kingdom	Phylum	Class	Order	Family	Genus	Species	Common name	Female maturi
 02468	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Planigale	gilesi	Paucident planigale	240		16	75	6.1	2	341	0.01	5.8	6.9				unknown	small	low			0.058	9.1	308.25	36,420,455,522,978
 02469	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Planigale	ingrami	Long-tailed planigale				90	7	2				4.3				unknown	tiny	low			0.065	8.8	307.65	36,455,522,978,1032
 02470	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Planigale	maculata	Pygmy planigale	290		20	71	7.65	2	91		4.85	10		5.8	671	captivity	small	acceptable			0.067	10.6	307.65	36,420,455,522,671,978
-02471	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Planigale	tenuirostris	Narrow-nosed planigale	240		19	95	6	2	332		2.7	5.3		5.2	671	captivity	small	acceptable			0.063	7.1	307.65	36,420,522,671,978
 02472	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Pseudantechinus	bilarni	Sandstone dibbler	180	180	39	122	4	1	365			28				unknown	small	low						434,455,522,542,978
 02473	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Pseudantechinus	macdonnellensis	Fat-tailed marsupial mouse	350	350	43	106	6	1	365	0.0123		32.5		7	671	captivity	small	acceptable			0.152	43.1	307.35	36,420,434,455,522,671,730,978
 02474	Animalia	Chordata	Mammalia	Dasyuromorphia	Dasyuridae	Pseudantechinus	ningbing	Ningbing pseudantechinus	330		45	112	4		365			17.5				unknown	small	low						522
@@ -2539,7 +2537,7 @@ HAGRID	Kingdom	Phylum	Class	Order	Family	Genus	Species	Common name	Female maturi
 02556	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Ailurops	ursinus	Sulawesi bear cuscus, or Bear cuscus										7000				unknown	small	low						434,671
 02557	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Phalanger	gymnotis	Ground cuscus			13	270	1					2400		18.9	671	captivity	small	acceptable					309.55	522,671,1056
 02558	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Phalanger	orientalis	Gray cuscus			13		2					2500				unknown	tiny	low						522,671,1308
-02559	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Spilocuscus	maculatus	Common spotted cuscus, or Spotted cuscus	222	243	13	240	2		365		1700	3500		17	671	captivity	tiny	acceptable			6.27	4250	307.85	36,420,434,455,522,542,671,1308
+02559	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Spilocuscus	maculatus	Common spotted cuscus, or Spotted cuscus	222	243	
 02560	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Trichosurus	arnhemensis	Northern brush-tailed possum	365	548	17	180	1	1.8			470	1300				unknown	tiny	low						455,671,730,1308
 02561	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Trichosurus	caninus	Mountain brush-tailed possum	900		16	255	1	1	365		774	3150				unknown	tiny	low						434,455,542,978
 02562	Animalia	Chordata	Mammalia	Diprotodontia	Phalangeridae	Trichosurus	vulpecula	Brush-tailed possum	315	730	17	204	1	1.5	274	0.279	740	2395	0.0206	15.9	671	captivity	medium	acceptable			3.8	1993.5	309.15	36,247,420,434,455,671,731,978,1143
@@ -2842,7 +2840,6 @@ HAGRID	Kingdom	Phylum	Class	Order	Family	Genus	Species	Common name	Female maturi
 02861	Animalia	Chordata	Mammalia	Rodentia	Caviidae	Galea	musteloides	Common yellow-toothed cavy	66	60	54	39	2.63	7	53	37.99	136.8	337.9	0.0181	3.5	671	captivity	small	acceptable			1.473	322	310.45	36,420,434,455,610,671,680,731
 02862	Animalia	Chordata	Mammalia	Rodentia	Caviidae	Galea	spixii	Spix's yellow-toothed cavy	70	112	53	42	2.5	6.5	53	40		450		4.6	671	captivity	small	acceptable						434,455,671,978
 02863	Animalia	Chordata	Mammalia	Rodentia	Caviidae	Hydrochoerus	hydrochaeris	Capybara	456	456	150	103	4.8	1.25	245	1500	8299	55000		15.1	671	captivity	large	high			36.754	26385	310.25	36,420,434,455,610,671,680,747,776,817
-02864	Animalia	Chordata	Mammalia	Rodentia	Caviidae	Kerodon	rupestris	Rock cavy	151		75	35	1.5	5	86	76		950		12.9	671	captivity	medium	acceptable			2.011	801	311.35	36,434,455,671,978,1032
 02865	Animalia	Chordata	Mammalia	Rodentia	Chinchillidae	Chinchilla	lanigera	Long-tailed chinchilla	240	240	111		2	2		35		642.5		17.2	671	captivity	large	acceptable			1.31	436.7	307.85	36,290,291,292,434,455,610,671,680,776,1032,1104,1334
 02866	Animalia	Chordata	Mammalia	Rodentia	Chinchillidae	Lagidium	peruanum	Peruvian mountain viscacha	365	365	140	59	1	2		180		1250				unknown	tiny	low						434,455,610,671,680
 02867	Animalia	Chordata	Mammalia	Rodentia	Chinchillidae	Lagidium	viscacia	Mountain viscacha			134		1.5			260		1540		19.5	671	captivity	small	acceptable						455,610,671,730
@@ -2962,14 +2959,12 @@ HAGRID	Kingdom	Phylum	Class	Order	Family	Genus	Species	Common name	Female maturi
 02981	Animalia	Chordata	Mammalia	Rodentia	Gliridae	Eliomys	quercinus	Garden dormouse	365	365	23	30	5	1.2				82.5	0.0409	5.5	671	captivity	small	acceptable						434,455,542,570,610,671,731
 02982	Animalia	Chordata	Mammalia	Rodentia	Gliridae	Glirulus	japonicus	Japanese dormouse	145		30		4	1.5				27		7	671	captivity	tiny	acceptable						434,455,671,1308
 02983	Animalia	Chordata	Mammalia	Rodentia	Gliridae	Glis	glis	Fat dormouse	322	335	25	33	4	1.2		1.5		125		8.7	671	captivity	small	acceptable			0.664	174.4	310.85	36,420,434,455,542,570,610,671,680,1266
-02984	Animalia	Chordata	Mammalia	Rodentia	Gliridae	Graphiurus	murinus	Woodland dormouse			24		3	2		3.5		24		6.9	671	captivity	medium	acceptable			0.225	38.4		36,434,455,570,671
 02985	Animalia	Chordata	Mammalia	Rodentia	Gliridae	Graphiurus	platyops	Rock dormouse					5.2					46.1		7.3	671	captivity	small	acceptable						671,730,978
 02986	Animalia	Chordata	Mammalia	Rodentia	Gliridae	Muscardinus	avellanarius	Hazel dormouse	335	335	23	39	4	1.5	50	0.8		27.3		5.3	671	captivity	tiny	acceptable			0.351	23.5		1,36,434,455,570,610,671,680
 02987	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Chaetodipus	fallax	San Diego pocket mouse	166	166	25		3	1				18.7		8.3	671	captivity	small	acceptable			0.15	19.6	305.75	36,420,434,455,610,671
 02988	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Chaetodipus	formosus	Long-tailed pocket mouse	365	365	28	25	5	1		1	8	19		7.1	647	captivity	small	acceptable			0.103	15.1		36,441,455,573,647
 02989	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Chaetodipus	nelsoni	Nelson's pocket mouse			30		3.68					14.4				unknown	small	low						455,612
 02990	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Dipodomys	agilis	Agile kangaroo rat	210				2.6	1				61				unknown	small	low			0.355	60.6	310.15	36,420,455,520,538,610,1308
-02991	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Dipodomys	deserti	Desert kangaroo rat	51		30	20	3	3		3.04	38	116		8.6	671	captivity	small	acceptable			0.517	105.8	309.95	36,420,434,455,538,610,639,671,1308
 02992	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Dipodomys	heermanni	Heermann's kangaroo rat	53		31	31	3.1	2		3.91	28.1	65		8.3	671	captivity	small	acceptable			0.408	63.3		36,434,455,538,610,671,680,1308
 02993	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Dipodomys	merriami	Merriam's kangaroo rat	102		28	20	2.3	1.6	54	2.92	17.6	42	0.0368	9.7	671	captivity	medium	acceptable			0.246	37.6	310.15	36,420,434,455,610,671,680,731,817
 02994	Animalia	Chordata	Mammalia	Rodentia	Heteromyidae	Dipodomys	nitratoides	Fresno kangaroo rat	88		34	27	2.3			3.18	20	35.5				unknown	small	low			0.204	37.8		36,434,455,610,671
@@ -3164,14 +3159,11 @@ HAGRID	Kingdom	Phylum	Class	Order	Family	Genus	Species	Common name	Female maturi
 03183	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Tamias	sibiricus	Siberian chipmunk	350	350	35	40	4.8	1.1	103	4		85		9.6	671	captivity	medium	acceptable						434,455,542,671
 03184	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Tamias	striatus	Eastern chipmunk	187	228	31	36	5	1.5		3.4	50.5	96		9.5	671	captivity	small	acceptable			0.813	89.6	311.35	36,420,434,436,441,455,542,610,671,676,680,776
 03185	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Tamias	townsendii	Townsend's chipmunk	353		28	50	4.5	1		3.5	35	75	0.0333	9.3	671	captivity	small	acceptable						434,455,610,671,680,731
-03186	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Tamiasciurus	hudsonicus	Red squirrel	342		37	63	4.2	1.7		7	83.8	200	0.0216	9.8	671	captivity	tiny	acceptable			1.615	219.6	311.85	36,420,434,455,542,610,671,676,680,731,777,904,1284
 03187	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Trogopterus	xanthipes	Complex-toothed flying squirrel	669	669	80	105	1.64									unknown	small	low						434,455
 03188	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Urocitellus	beldingi	Belding's ground squirrel	365	547	26	24	5.7	1		6.87	55	290	0.0545			unknown	small	low			0.796	293.7	308.65	36,420,434,455,731
 03189	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Urocitellus	richardsonii	Richardson's ground squirrel	335	335	24	36	6.06	1		6.35	92.8	342.5	0.0559			unknown	tiny	low			0.788	266.3	308.58	36,434,455,610,634,680,731,1032,1143
 03190	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Xerospermophilus	mohavensis	Mohave ground squirrel			24	36	6			4.5	30	150		7.8	671	captivity	small	acceptable			0.629	240	310.15	36,420,455,610,671,978
-03191	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Xerospermophilus	tereticaudus	Round-tailed ground squirrel	325	325	28	39	5.4	1		3.9	75	163.3		8.9	671	captivity	tiny	acceptable			0.501	125.1	309.45	36,420,434,455,538,610,671,680
 03192	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Xerus	erythropus	Striped ground squirrel	365	365	71	53	3.5					600		10.3	671	captivity	small	acceptable						434,455,542,610,671
-03193	Animalia	Chordata	Mammalia	Rodentia	Sciuridae	Xerus	inauris	South African ground squirrel	365	365	45	50	2.2	1		20		588		11.5	671	captivity	small	acceptable			1.775	528.5	309.95	36,420,434,455,610,671,680
 03194	Animalia	Chordata	Mammalia	Rodentia	Spalacidae	Cannomys	badius	Lesser bamboo rat			42	61	1.8			7		650	0.0145	4.8	671	captivity	small	acceptable			0.96	344	309.15	36,420,434,455,610,671,731
 03195	Animalia	Chordata	Mammalia	Rodentia	Spalacidae	Rhizomys	sumatrensis	Large bamboo rat			22	91	4					3000				unknown	small	low						455,610,671,978
 03196	Animalia	Chordata	Mammalia	Rodentia	Spalacidae	Spalax	carmeli	Mt carmel blind mole rat														unknown	tiny	low						1413
