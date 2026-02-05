@@ -172,7 +172,12 @@ def main():
         print(f"ERROR: {args.aligner} not found.")
         return
 
-    summary = align_genes(args.input, args.output, args.aligner, args.type)
+    # Change this in your main() function to do both automatically:
+    for seq_type in ['proteins', 'nucleotides']:
+        print(f"Starting alignment for: {seq_type}")
+        align_genes(args.input, args.output, args.aligner, seq_type)
+
+    # summary = align_genes(args.input, args.output, args.aligner, args.type)
     print(f"\n✓ Finished! Aligned files are in {args.output}/{args.type}")
 
 
