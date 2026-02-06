@@ -8,7 +8,7 @@ atgatgggttttgtttgattagcaagttctta------tgacgt---------------t
 aaagtgattgtcgggttcga---tgacatgggggattgggtggttctagataatga---g
 catgggggttatataggggaagatatggctggggtttccgcgatttacgattatggatga
 tggttaatggtggtggctgggtgaacgttgtttgttagcatttttattgttattgatatt
-gtgcgtgggggttag------
+gtgcgtgggg------gttag
 >Puma_concolor Puma concolor ND6 nucleotide
 atgataacatacattgtatttattctaagtacaatttttgtggtgagctttgtaagtttt
 tcttctaagccttcacctatttatggtgggtttggtttgattgtggcgggtggtattggt
@@ -19,7 +19,7 @@ ttattgactgcttgttatattttaaaagaaga------ggaggt---------------a
 gaggttgtgtttaagtttaa---tggtgcgggtgattgggtaatttatgatacagg---t
 gattcagggttttttagtgaagaggccatgggaattgcagccttgtatagctatggaact
 tggttagtggttgttactggttggtcgctgtttatcggtgtattggtgattatagaagtt
-actcgtggtaattaa------
+actcgtggta------attaa
 >Vulpes_macrotis Vulpes macrotis ND6 nucleotide
 atgataacatacattgtatttattttaagtattgtttttgtgataagcttcgtgggattt
 gctacgaagccttctcctatttatggtgggttggtgttaattattagtggtgggattggt
@@ -30,7 +30,7 @@ ttgttgactgcttgctatattttaaaggatga------tgaggt---------------g
 gaggtagtattgaagtttaa---tggtataggagattgggttatttatgatacagg---t
 gactctggattttttagtgaggaggctatgggtattgcggcgttgtatagttatggtact
 tggttagtaattgttactggctggtcactattaactggtgtgttagtaattatggaggtt
-acacgtggtaattaa------
+acacgtggta------attaa
 >Hyaena_hyaena Hyaena hyaena ND6 nucleotide
 atgataacatacattgtatttatcctaagtactatatttgtggtgagctttgttagtttt
 tcttcaaagccttcaccaatctacgggggttttggtttgattgtggctggcggtattggg
@@ -41,7 +41,7 @@ ttgttaacagcttgctatattcttgaggaaaa------cgaaat---------------t
 gaagttgtttttaagtttaa---tggtgcgggtgattgggtgatttatgatactgg---t
 gattcaggcttttttagtgaggaggccataggaattgctgccttgtatagttatgggacc
 tggttggttattgtgacgggctgatcattacttactggtgttttagtaattatggagatt
-actcgtggtaattaa------
+actcgtggta------attaa
 >Myrmecobius_fasciatus Myrmecobius fasciatus ND6 nucleotide
 atgaaaatgatggttgtttttttactttctttgttactgatactagggtttgttgctttt
 gcttccaaaccgtctcctgtatatggcgggctaagtcttgtagtaagtgggggattaggg
@@ -52,7 +52,7 @@ ttaatgtgatact------tgtttggtggtgt------tgggtt---------------t
 gatactgctgttgatt---------------------------tattcgattcgtt---a
 ggtgggtattgtgtaggccaagattgaagtggggtatcttctttgtatggttgtggggga
 tgggctttagtgttgttaggttgaattttatttattactattttagtagttttggaggtt
-gttcgtggtttgtag------
+gttcgtggtt------tgtag
 >Echymipera_rufescens Echymipera rufescens ND6 nucleotide
 atgaaaataatagttatttttttattttcagtyctgttaatttttgggtttgtagctttt
 gcttcaaaaccttctcctgtatatggtgggttaagtttggttgctagtgggggttttggt
@@ -63,7 +63,7 @@ attatttggtattcg---gctacaggtgaggt------ggaatt---------------g
 aatactactattgagt---------------------------tatttgattctat---t
 ggaaattattgtttgggtcaggattatagtggtgtgtcattgttgtatggttgtggtggg
 tgagcattagtattgttagggtggattttatttattactatttatattgttttggaagta
-gttcgtagtcgataa------
+gttcgtagtc------gataa
 >Canis_latrans Canis latrans ND6 nucleotide
 atgataacatacattgtatttattttaagtatcgtctttgtgatgagttttgtgggtttt
 gccactaaaccatctcctatttacggtgggcttgtgctaattattagcggtgggattggt
@@ -74,7 +74,7 @@ ttgttgactgcttgctatattttgaaggatga------tgaggt---------------g
 gaggtagtattaaagtttaa---tggaatgggggattgagtgatctatgatacggg---a
 gactctgggttttttagtgaagaggctatgggtattgcggctttatatagttatggaacc
 tggttggtgattgttacaggttgatcgctgttaactggcgtgttggttattatggaagtt
-acccgtggtaattaa------
+acccgtggta------attaa
 >Galerella_sanguinea Galerella sanguinea ND6 nucleotide
 atgataatatacattgtatttattttaagtactatttttgtggttagctttgttagtttc
 tcttcaaagccttcgcctatttatgggggtattggtttaattgtagcgggtggtgttggt
@@ -85,7 +85,7 @@ cttttaatggcttgttatattttagaagatga------agatgc---------------t
 gaagttgtttttggttttaa---tggtgcgggtgattgggtgatttatgacactgg---t
 gattcaggtttcttcagtgaggaggctatgggaattgctgctttatatagctatgggact
 tggttggttattgttactggatggtccttgcttactggtgtattggttattatggaaatt
-actcgtggaaattaa------
+actcgtggaa------attaa
 >Callospermophilus_lateralis Callospermophilus lateralis ND6 nucleotide
 ---atgacatatattacgtatttattgagtgtgttttttgttttgggcttcgtggggttt
 tcttcaaagccttctcctatttatgggggtttggggttaattattagtggggggattggg
@@ -96,7 +96,7 @@ ttcatgattgttgtatttatagtcttgtatga------tgaatt---------------a
 gaagttgtgattgagtttga---gggttcagagaattgaataatgtttgagggaga---t
 gaattagggttaattcgtgaggattcaataggggtggcggctatgtatagttatgggagt
 tggttgatggttgtggctggctggtcattgtttgttagtatttttattgttattgaaatt
-acacgtggaaataga------
+acacgtggaa------ataga
 >Atelerix_albiventris Atelerix albiventris ND6 nucleotide
 atgataacttatttaatattattattcagtttaatttttgtaataggttttgttagtttt
 tcttctaaaccttcacctatttatgggggatttggtttgattgtaagtgggggttttggt
@@ -107,7 +107,7 @@ ttattatttatattatacgtaactatgggata------tgaatt---------------a
 aatttaattttaaatttaag---cagtgaagatgatggagtaatttatgatactgg---t
 gatttaggattttttagtgaggaaactaaaggagtaactgctttatatagttatggatcc
 tgattagtaataatttctggtttgtcattagtattttgtgttataattattatggaaatt
-actcgtggggattaa------
+actcgtgggg------attaa
 >Panthera_onca Panthera onca ND6 nucleotide
 atgataacatacattgtatttattttaagtacaatctttgtggtgagctttgtgagtttt
 tcttcaaagccttctcctatttatggtgggtttggtctgattgtggctggtggtgctggt
@@ -118,7 +118,7 @@ ttgttaactgcttgctatattttaaaagaaga------tgaagt---------------c
 gaggttgtgtttaagtttaa---tggtgcaggtgattgagtgatttatgatacggg---t
 gattcggggttttttagtgaggaggccatggggattgcagcactgtatagttatggaaca
 tggttggtggttgttactggttggtccttgcttattggtgtgttggtgattatagaggtt
-actcgtggaaactaa------
+actcgtggaa------actaa
 >Neovison_vison Neovison vison ND6 nucleotide
 atgatgacatacattgtatttattctaagcgttatttttgtagttagttttgtagggttt
 tcttcaaaaccttctcctatctacggcgggttggtgttaattattagcggggctattggc
@@ -129,7 +129,7 @@ ttattaactgcttgttatattttaaagggtgatgatgttgaggt---------------t
 gaggttgtgttaaagtttaa---tggggcgggtgattgagtaatttatgatacagg---t
 gattcagggttttttagtgaagaggctatgggaattgcagctttatatagctatgggact
 tggcttgttattgttacaggttggtctcttcttattggggtggtagtaattatggaggtt
-actcgtggaaattaa------
+actcgtggaa------attaa
 >Didelphis_marsupialis Didelphis marsupialis ND6 nucleotide
 ataaaaataataactatttatattatttctttgctcttgataattggttttgtggctttt
 gcttctaaaccttctcctatttatggaggtctaagtttagtggttagcggtggtttgggg
@@ -151,18 +151,18 @@ gtaggattggtgctgtgggtgaaagagtatga------tggggt---------------g
 gtggttgtggtaaactttaa---tagtgtgggaagttgaataatctatgaaggaga---g
 gggtcagggttgattcgggaggatcctattggtgcgggggctttgtatgattacgggcgt
 tgattagtagtagttactggttgaacattatttgttggtgtatatattgtaattgagatt
-gctcgggggaatagg------
+gctcggggga------atagg
 >Apodemus_sylvaticus Apodemus sylvaticus ND6 nucleotide
 ---atgataaattatatttctattttaagtgtattatttttgattgggtgtcttgggttg
 gctttaaagccttctcctatttatggtggtcttggattgattgttagtgggtttgtgggg
 tgtttgatggttttagggtttggtggttcatttttagggttgatagtgtttttaatttat
 ttgggtggaatgatagtagtatttgggtatactactgctatggctactgaggagtttcct
 gagacttgagggtctaattggataatttttagcattttggttgctggggtaataatggag
-ttattagtaatatatgtattgagttattatgg------tgaggt---------------a
-gagttagta---agttttga---tagtttgaatgattgactaatatatgagattga---t
+ttattagtaatatatgtattgagttattatgg------tgaggt----------------
+--agagttagtaagttttga---tagtttgaatgattgactaatatatgagattga---t
 gatgtaggggtaatgttagaaggggggattggtgtagcggctatatatagttgtgctact
 tgaatgatagtggttgctgggtggtctttatttgctggaatttttattattattgagatc
-actcgagactag---------
+actcgag---------actag
 >Heterocephalus_glaber Heterocephalus glaber ND6 nucleotide
 atgactttaaacgtttattattttttaagtattttatttgttattgggtgtgtaggtttt
 tctgtaaaaccttcccctatttacggagggctatctttgattgttagcggggcattaggg
@@ -173,7 +173,7 @@ ggattattgtcttatgtctggttaaactatga------ttatgt---------------t
 gaagttattgtgcagtttaa---taatatgggggagtgggtgatttatgatggtgagggt
 ggtgtgggctacttgagtgagggtcctactggggttggtgctatttatagttataactac
 tggctgatgtttgtggcaggatggtcattgtttgcaggaattctcattactatgcagatt
-attcgaggtaactag------
+attcgaggta------actag
 >Meles_meles Meles meles ND6 nucleotide
 atgatgacgtatattgtattcattctaagtgttgttttcgtagttagttttgtaggattt
 tcttcaaaaccttctcctatctacggtgggttggctttaattattagtggggctgttggt
@@ -184,7 +184,7 @@ ttattgatggcttgctatatcttgaagggagatgatgttgaggt---------------g
 gaggttgtgttaaaatttaa---tggggctggtgattgagttatttatgatacagg---t
 gactcagggttctttagtgaagaggctatgggaattgcggctttatatagttatgggact
 tgattggttattgttactggttggtctcttcttatcggggtattggtgattatggaggtt
-actcgtggaaattaa------
+actcgtggaa------attaa
 >Trichosurus_vulpecula Trichosurus vulpecula ND6 nucleotide
 atggaaataatggttgtttttttattttcagttttatttatttttggttttgttgctttt
 gcttctaaaccatctccaatctatggtgggttaagtcttgtagtaagtggtggtttgggt
@@ -195,7 +195,7 @@ ttagtgtggtatttt---atgtcaggtgaagt------tgaggt---------------t
 gatactgctgtggagt---------------------------tgtttgatactgt---t
 ggtgtttattgtgttgggcaggattctagtggtgtgtctttgttgtatggttgtggtgga
 tgaattttagtcttattaggttgagttttgtttattactatttatattgttttagaaatt
-gtacgtggtcgtgattag---
+gtacgtggtcgt---gattag
 >Potorous_tridactylus Potorous tridactylus ND6 nucleotide
 atgaaaataataattgtttttttattttcagttttactgatttttggatttgtagctttt
 gcttctaagccttcccctgtttatggtgggttgagtttggtggttagtgggggtttaggt
@@ -206,7 +206,7 @@ ttagtttggtattta---atatctggtgaggt------tgaagt---------------t
 ttaatggggattgagt---------------------------tgtttgatgttgt---t
 ggggattattgtgtaggtcgagattatagtggtgtgtctttattgtatggttgtggggga
 tgggtgttggtattgttaggttggatcttatttattactatttatattgtgttggaagtt
-gttcgtcgtcctagttaa---
+gttcgtcgtcct---agttaa
 >Elephantulus_rozeti Elephantulus rozeti ND6 nucleotide
 ---atgatatacattgttttgatgttgagtgtagtatttgtgttgggtttagtgggggta
 tcttctaaaccctctcctatttttggagggttgggcttgattgtaagtggaggtgtcggg
@@ -217,7 +217,7 @@ gtattggtattggtgtggttaatgactgggtt------agggta---------------t
 gatggagatgttgttacagg---tatctttggggatagcttgattgggtgtagtat---g
 gggggtgatatggtgcgtggggattatgctggtgggtctcttttatatgggatgggtagt
 tgattgttggtaattagtggttgggtgttgtttgtcagtatttttattgtaattgagatt
-gttcggggggtgagg------
+gttcgggggg------tgagg
 >Cervus_elaphus Cervus elaphus ND6 nucleotide
 atgataacatacattgtatttatcttaagtattatttttgtgcttggttttgtaggattt
 tcttcgaaaccttcgcctatttatggggggttgggattaattgtgagtggtggagttggt
@@ -228,7 +228,7 @@ gttatgatggtttattacgtgttaaaggatga------ggaggt---------------g
 gagattgtgtttcagtttaa---tggattaggagattgggttatttatgatacagg---a
 gattctggattttttagtgaggaggccatgggaattgcggctctctacagttatggtact
 tgattggttattgtgactgggtggtctttgttaattggtgtagtggttattatggaaatt
-actcgtggaaattaa------
+actcgtggaa------attaa
 >Arvicola_amphibius Arvicola amphibius ND6 nucleotide
 ---atgatagaatcaatttattttttaagcttattagtttcgttaggttgtttaggggct
 actttgaagccttcacctatttatggtgggttgtgcttggttgttagtgggtgttctggt
@@ -239,18 +239,7 @@ ttgggagtgttgtttgtaagtggtgtttatga------aggcac---------------g
 gaaattgtgttagagtttaa---tagtgtaggtgggtgggtggtgtatgatggtga---t
 gggttaggattaatgggtgaagggggtgctggtgtagctgctctatatagttgttctgca
 tggcttatggttgtttctggttgaacattatttatgggggtgttcattattattgaaatt
-actcgtgggaattaa------
->Madoqua_kirkii Madoqua kirkii ND6 nucleotide
-atgataacatacattgtgtttgctttaagcattatttttgtgattggttttgtgggtttt
-tcttcaaaaccttcgcctatctatgggggacttgggttaattgtgagtggtggggttggt
-tgtggtattgtgttgaactttggtgggtcttttttgggcttaatggtttttttaatttat
-ttagggggtataatagtggtttttggttatacaacggctatggctactgagcagtatcct
-gaggtttgagtctctaataaaattgttctaggggctttcattactggtttattgatggag
-ttcttgatagtttattacgtgttgaaagataa------ggaagt---------------a
-gaagttgtgtttaagtttaa---tggtttaggggattgggtgatttatgatacggg---a
-gactctggattttttagtgaggaggctatgggaattgcggctttgtatagttatggtact
-tgattggttattgtaactggttgatctctgttgattggtgttgtagttattatggagatt
-actcgtggaaattaa------
+actcgtggga------attaa
 >Vulpes_lagopus Vulpes lagopus ND6 nucleotide
 atgataacatacattgtatttattttaagtattgtttttgtgataagcttcgtgggattt
 gctacgaagccttctcctatttatggtgggttggtgttaattattagtggtgggattggt
@@ -261,7 +250,7 @@ ttgttgactgcctgctatattttaaaagatga------tgaggt---------------g
 gaggtagtattaaagtttaa---tggtataggagattgggttatttatgatacagg---t
 gactctggattttttagtgaggaggctatgggtattgcggcgttgtatagttatggtact
 tggttagtaattgttactggctggtcactattaaccggtgtgttagtaattatggaggtt
-acacgtggtaattaa------
+acacgtggta------attaa
 >Myotis_lucifugus Myotis lucifugus ND6 nucleotide
 atgatagtctatattgtatctattttaagtattatttttgtagttggctttgtgggattt
 tcttctaagccttctcctatttatggtggggtaggtttatttgcgagtggtggggttggt
@@ -272,7 +261,7 @@ tttttactagttttatatgtgttagttggtga------agagtt---------------g
 aaggtagtttttgaatttaa---tgagattggggattgagctatctatgacacagg---t
 gattctggagtatttactaaagagtccatgggagtagccgcattgtatagctatggtaat
 tgattagtggttgttactggctggtctttacttattggtgtagtaatcattttagaaatt
-acacgtggaaattaa------
+acacgtggaa------attaa
 >Peromyscus_polionotus Peromyscus polionotus ND6 nucleotide
 ---atgacagaatatatttttattttaagttcatttattgcgctagggtgcttaggcgta
 tcattgaagccttcacctatctatgggggtgtgtgtttaattgttagtgggtgttctggt
@@ -283,7 +272,7 @@ ataggtgtggtttatgcctctaatgattataa------tttagt---------------a
 aattctgtgttagtacataacagtgacgctgggggttgggtggtttatgatagtga---t
 gagttagggttaatgggagaggggggtgctggggtagctgctttatatagttgttctgca
 tgattgatggtggtgtctgggtggactttattaatgggtgttataattattattgagatt
-gttcgaataaattag------
+gttcgaataa------attag
 >Tamandua_mexicana Tamandua mexicana ND6 nucleotide
 ---atgatatattttgtacttttgctgagtattttgtttgttgttggttttgtgagtttt
 tcatctaaaccatctcctatttatggaggactagggttggtggttagtggtggtgtgggt
@@ -294,7 +283,7 @@ gttattgttatgttatggttggttaattatga------ggatatcta------------t
 ggggtgttttgtgggttaaa---atatatagaggattgggcagtttacagttattt---g
 ggtgattgatatgttcgtggggattatgtgggtgttgctgctttatatagtcatggttgg
 tggttggtagttttggctgggtgagctttgtttattagtatttttgttgtgattgaaatt
-actcgtagtaaaagg------
+actcgtagta------aaagg
 >Cynomys_ludovicianus Cynomys ludovicianus ND6 nucleotide
 ---atggcatatatagcgtacttattaagtatactttttgttttaggttttgtaggattt
 tcttcaaagccttctcctatttatgggggtttagggttaattattagtgggggaattgga
@@ -305,18 +294,7 @@ tttttaattgttgtttttatagttttatatga------tgaagt---------------a
 gaagttgtaattgaatttaa---ggattcgggaaactgaatggtgtttgaggggga---t
 gagttggggttaattcgtgaagattcaataggggtggcagctatgtataattgtggaagt
 tgattaatggttgtagctggctggtcgttgtttgttagtatttttattgtgattgaaatt
-acgcgtggtaataga------
->Macropus_rufus Macropus rufus ND6 nucleotide
-atgaaaataatagttgtttttttattttctattttgctggtttttggatttgtggctttt
-gcctctaaaccttctcctgtttatggcgggttaagtttagtagcgagtggaggtttgggt
-tgtgcaattgttgtaagtttagaagatgtttttttaggtttaattgtgtttttaatttat
-ttggggggtatgttggtagtttttggctatacggctgctatggctacggaggagtatcct
-gagagttgagttggtaatactgttgctttaagtatattattgtttactgtaattgttgag
-tcggtttggtattta---atgtcaggtgatgt------taaagt---------------t
-tctatggatattgaat---------------------------tgtttgatacgat---t
-ggtggctattgtgtggggcaagattatagtggagtgtcattgttatatggttgtggggga
-tgggctttagtgctgctaggttgaatcttgtttattactatttacattgtattggaagtt
-gttcgtggtcgtaattag---
+acgcgtggta------ataga
 >Procavia_capensis Procavia capensis ND6 nucleotide
 atgataatatatgtaacttttattctcagtgtggtctttgtattgggttttgttgggttt
 tcttcaaaaccttctcctatttttggggggttagtttttattattagtggtggggttggg
@@ -327,7 +305,7 @@ gttttagtggttatttgagtgttaaatgaggg------taagtgttatttgccggatcgt
 ggtttagtttataatttttg---gggtttagaggactgactggttcttggggagga---g
 ggtgttggtgttgttcgtgaggattattctggggggtatgcattgtatggtccgggttgt
 tgattggttacggcgtctgggtttgtgttgtttattagtattattattattatagaggtt
-actcggggacgttaa------
+actcggggac------gttaa
 >Gulo_gulo Gulo gulo ND6 nucleotide
 atgatgacatacgttgtatttattttaagcgttatttttgtagttagttttgtagggttt
 tcttcgaaaccttctcctatctacggtgggctcgttttaattgttagtggggctgttggt
@@ -338,7 +316,7 @@ ttattggctgcttgttatattttgaagggtgatgatgttgaagt---------------t
 gaagttgtattaaagtttaa---tggagcgggtgattgggtcatttacgatacggg---t
 gattcaggatttttcagtgaggaagccataggaattgcggctttgtatagttatggaact
 tggcttgttattgttactggctgatcacttctcattggggtattggtgattatggaggtt
-actcgtggaaactaa------
+actcgtggaa------actaa
 >Orycteropus_afer Orycteropus afer ND6 nucleotide
 ---atggtttatgctgtttttatgttaagtgtgattcttgcagttggttttgtgggattt
 tcttctaagccgtctcctatttatggggggttgtgtttgattgtaagtggaggagttggg
@@ -349,7 +327,7 @@ tttgggttaattatgtgattggttagtgggga------tgggtt----------------
 --gtttggatttgattttgg---ggatttggagaattggttagtttttagtagtga---t
 gaaatgtatatagttcgtggggattgtgctggtgggtcttttttatataattatggtagt
 tgggtattagttatggctgggtggtctttgtttattagtgtgtttattgttattgagatt
-actcggggccgttaa------
+actcggggcc------gttaa
 >Desmodus_rotundus Desmodus rotundus ND6 nucleotide
 atggcagaatatgtcgtatttgtcttgagtgttgtctttgtggtaggctttgtgggggtc
 tcttctaagccttctccggtgtatggggggttgggtctgattgtgagtgggggtgttggg
@@ -360,7 +338,7 @@ tttgtgttggtttttgctgtgttggggggagg------gggatt---------------g
 ggggtggtttttgggttaga---tgtattgggtgattgggctgttcggggtggggg---c
 gggctagaggctgttggcaaagaggtgatgggtgtggcgggtctatatgattatggcatc
 tggctggtgttgattactgggtggtgtttgtttattgctgttgtggttgtcatagaggtt
-acgcgtgggggataa------
+acgcgtgggg------gataa
 >Proteles_cristata Proteles cristata ND6 nucleotide
 atgataacatacgttgtatttatcttgagtactatttttgtggtgagctttgttagtttt
 tcttcaaagccttcgccgatctatgggggttttggtttaattgtggctggtggtattggg
@@ -371,7 +349,7 @@ ttgttgatggcttgttatgttcttgaggagaa------tgaggt---------------t
 gaaattatttttaaatttaa---cggggctggtgattgggtgatctatgatactgg---t
 gattcaggtttttttagcgaggaggccatgggaattgcggctttgtatagttatggaact
 tggttggttattgtaacgggttggtcgttactcactggtgttttggtaatcatggaaatt
-actcgtggtaattaa------
+actcgtggta------attaa
 >Puma_yagouaroundi Puma yagouaroundi ND6 nucleotide
 atgataacatacattgtatttattctaagtacaatctttgtggtgagctttgtaagtttt
 tcttcaaagccttctcctatttatggtgggtttggtttgattgtggcaggtggtgttggt
@@ -382,7 +360,7 @@ ttattgactgcttgttatattttgaaagaaga------ggaggt---------------t
 gaggttgtgtttaagtttaa---tggtgcgggtgattgagtaatttatgatacggg---t
 gattcaggattttttagtgaggaggccatgggaattgcagcgttgtatagttatgggact
 tggctggtggttgttactggctggtcattgcttattggtgtgttggtaattatagaggtt
-actcgtggtaattaa------
+actcgtggta------attaa
 >Arctogalidia_trivirgata Arctogalidia trivirgata ND6 nucleotide
 atggcaacatacattgtgtttattttaagtgttatttttgtagttagttttgttagtttt
 tcttcaaaaccttcacctatttatggtggatttggtttgattgtggctggtagcattggt
@@ -393,7 +371,7 @@ ttgttgactgcttgttatattttagaggaaga------tgaagt---------------t
 gaggttgtgtttaagtttaa---tggtgcgggtgactgagtgatttatgatacggg---a
 gattcgggattttttagtgaggaggctatgggtattgcggctttatatagttatgggact
 tgattggttattgttactggttgatcattgcttactggagtgttagtaattatagagatt
-actcgtggaaactaa------
+actcgtggaa------actaa
 >Cavia_porcellus Cavia porcellus ND6 nucleotide
 gtggctgtgaatgtaatgtactttctaagcattttattcgttataggctttgtgtgccta
 tctgcaaaaccctcacctgtttatggcggtctgacattggttgtcagcggaggcatcggt
@@ -404,7 +382,7 @@ tttttattgttatattgatgagcaagtaatga------tcagat---------------t
 gaaatcctagttgattgcta---taatataggagagtggatcatttatgatgatgaaagt
 gcagtaggttttcttagtgaagatcctgcaggagtggcagccatttatagttacaattgt
 tgattaatatttgtagctggctgatctatgtttgttggtatttttattgctattgaaatt
-actcgtggaaattag------
+actcgtggaa------attag
 >Metachirus_nudicaudatus Metachirus nudicaudatus ND6 nucleotide
 ataaaaataataactatttatattatttctttgctcttgataattggttttgtggctttt
 gcttctaaaccttctcctatttatggaggtctaagtttagtggttagcggtggtttaggg
@@ -426,7 +404,7 @@ tttataatagtttattatgtgttgaaagataa------agaggt---------------g
 gaaattgtgttcgagtttaa---tgggttaggggattgggtgatttatgatacagg---g
 gattctggcttttttagtgaggaagctataggaattgctgctttatatagctatggtact
 tgattggttattgtaactggttgatctttgttaattggtgttgtagtaattatggaaatt
-actcgtggaaattaa------
+actcgtggaa------attaa
 >Philantomba_monticola Philantomba monticola ND6 nucleotide
 atgataacatacattgtgtttattttgagtattatttttgtgattggttttgtagggttt
 tcttcaaaaccttcacctatttatggggggctaggtttaattgtgagtggtggggttggt
@@ -437,7 +415,7 @@ tttttgatggtttattatgtgttgaaggatga------ggaggt---------------a
 aaaattgtatttgagtttaa---tggtttaggggattgggttatttatgatacggg---a
 gattctgggttctttagtgaggaggctatgggaattgcggctttatatagttatggaact
 tggttagttattgtaactggctgatctttgttgattggtgtagtggtgattatggaagtt
-actcgtggaaattaa------
+actcgtggaa------attaa
 >Elephantulus_rufescens Elephantulus rufescens ND6 nucleotide
 ---atgatttatgatgtac---tgttgagtgtagtatttgttttagggatggtaggggtt
 tcttctaaaccatctcctatttttggggggctggggctggtggttagtgggggtgttggt
@@ -448,7 +426,7 @@ attttagtcttagggtgattgtttttgggagtagg---tgatgg---------------g
 gtttatggtgatgtgttgaa---tgattttgatggtagcttgattgagttgggggt---t
 ggttctggatttactcgaggggattatgctggaagttctcttttatatggagagggtagt
 tgattgttgttggttagtggttgagtactgtttgttagtatttttattgtaattgagatt
-gttcgtggtattagg------
+gttcgtggta------ttagg
 >Glis_glis Glis glis ND6 nucleotide
 ---atgacatatattttatttctgttaagcatgccctttgtctttggctttttaggagat
 tctttaaagccgtcacctatttatggtggattgggtttaattttaagtggtggggttggt
@@ -459,7 +437,7 @@ attattttaattttattgataaaaggttatga------taaaat---------------t
 gaggttgtggtaaattttaa---tggactagaggattgggttttatttgagggtga---t
 gatgtaggtcttattcgtgaagattcaatgggtgtagctgctctatatagttatggaagt
 tgattgatggttgtggcgggttggtcattatttgttagtatttttattgtgattgaaatt
-actcgtggtaattag------
+actcgtggta------attag
 >Lepus_timidus Lepus timidus ND6 nucleotide
 ---atgacatatatagtatttttattgagtgtaatgtttgtaattggttttgtggggttc
 gcttctaagccatctcctatttatggggggcttgggttaattgttagtggtggggttgga
@@ -470,18 +448,7 @@ gtaggattagtagtgttcatagcgatgagtga------tgaggt---------------g
 gaggttgtggttagttttaa---aaatataggtgattggattatttttgaggggga---t
 gatgtaggtctaattcgagaggattctataggagtggcagcattatacagttatggaagt
 tggttaatagtagttgctggttggtctctgtttgtgagtatttttattgttattgagatt
-actcgtgggggttag------
->Neotoma_albigula Neotoma albigula ND6 nucleotide
----atgacagaatacatttatattttaagttcattggttgcattaggatgtttaggtaca
-tctttaaagccttctcctatttatgggggtctgtgtttaattattagtgggtgttcaggt
-tgtttagctgttttggggtttggtggttcgtttttaggtttgatggtgttcttgatttat
-ttggggggaatgatggttgtgtttgggtatacgactgctatggcggctgaggagtatcct
-gagacttgggtatcgagttggttagtccttggaactttagttatgagtatttttatggag
-gttggcatggtgtatgctatggatgatgataa------tgtggt---------------g
-gaggcggtgatggggtttag---tggtttgggcggttgagtgatttatgatagtga---t
-gaattgggtttaatgggtgaggggggtgcaggagtggcagctttgtacagttgctctgca
-tggcttatggtggtgtcggggtgaactttgttgattggggtatttattattattgaaatt
-actcggggaaactaa------
+actcgtgggg------gttag
 >Podomys_floridanus Podomys floridanus ND6 nucleotide
 ---atgacagaatatatttatgtttttagctcatttattgcgttagggtgtttgggtgtg
 tcattaaaaccttcgcctatttatggaggtctatgtttgattattagtgggtgttctggt
@@ -492,7 +459,7 @@ gttggtgtggtttatgcttctaatcattatag------tttgtc---------------a
 gattcagtagttacttataatgttaatataggcggttgggtggtttatgatagtga---t
 gatttggggttaataggggaaagtggtgttggtgtagctgctttgtatagttgttctgca
 tggttaatggtagtgtctggatgaactttattgataggtgtgttggttatcattgaggta
-gttcgtataaattaa------
+gttcgtataa------attaa
 >Vulpes_velox Vulpes velox ND6 nucleotide
 ---ataacatacattgtatttattttaagtattgtttttgtgataagcttcgtgggattt
 gctacgaagccttctcctatttatggcgggttggtgttaattattagtggtgggattggt
@@ -503,7 +470,7 @@ ttgttgactgcctgctatattttaaaggatga------tgaggt---------------g
 gaggtagtattgaagtttaa---tggtataggagattgggttatttatgacacagg---t
 gactctggattttttagtgaggaggctatgggtattgcggcgttgtatagttatggtact
 tggttagtaattgttactggctggtcactattaaccggtgtattagtaattatggaggtt
-acacgtggtaattaa------
+acacgtggta------attaa
 >Ailurus_fulgens Ailurus fulgens ND6 nucleotide
 atgataatatatattgtatttattttaagtgttatttttgtgattagtttcgtaggtttt
 tcttcgaaaccttcgcctatctatggagggctcgttttaattgttagtggggctgttggt
@@ -514,7 +481,7 @@ ttattgactgcttgttatattttaaaggatga------tgaggg---------------t
 gaagtagtttttaagttcaa---tggaataggtgattgagtgatttatgatacagg---g
 gattcaggattttttagtgaggaggccatagggattgctgctttatacagttatggtact
 tggcttgtcgttgttactggttgatcacttcttattggagtattggtaattatagaggtt
-actcgtgggaattaa------
+actcgtggga------attaa
 >Enhydra_lutris Enhydra lutris ND6 nucleotide
 atgatgacatatattgtattcattctaagtgttatttttgtagttagttttgtagggttt
 tcttcaaaaccttctcctatctacggcgggctggttttaattattagtggggctgttggt
@@ -525,7 +492,7 @@ ttattaactgcttgttatgttttaaagggtgatgatattgacat---------------t
 gaagttgtattgaagtttaa---tggagcgggcgattgggttatttatgatacagg---t
 gattcaggattttttagtgaggaagctatgggaattgcagctttatatagttatgggact
 tggttggttgttgtcactggctggtcacttcttattggggtgttggtaattatggaggtt
-actcgtggaagttaa------
+actcgtggaa------gttaa
 >Plecotus_auritus Plecotus auritus ND6 nucleotide
 atgttgatttatatcttatttgtcttgagcactatttttgtagttggtttcgttgggttt
 tcttcaaagccatctccagtctatggtgggattgggctaattgtaagtggtggagtcggt
@@ -536,7 +503,7 @@ tgcatgttagtcttatacgtgttagttgatgg------ggaatt---------------t
 ggattaattgttaaatttaa---tgaggttggagactgggtcatttatgatgtgtc---t
 agttcagatattattagtggtgagaccatgggtgttgctgcattatatagttatggtagt
 tgactggtaattattactggttggtccttacttattggtgtagtaattattttagagatt
-actcgaggaaattaa------
+actcgaggaa------attaa
 >Lutreolina_crassicaudata Lutreolina crassicaudata ND6 nucleotide
 ataaaaatactaactgtttttattatttctttgctcttgcttattggttttgcggctttt
 gcctctaaaccttctcctatttatggaggtttaagtttggtggtaagtggtggtttaggg

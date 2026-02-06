@@ -1,299 +1,234 @@
-# Mitochondrial Genome Longevity Analysis Pipeline
+## Mitochondrial Genomic Signatures of Mammalian Longevity
 
-A computational pipeline for identifying convergent amino acid substitutions (CAAS) associated with longevity across species using mitochondrial genomes. Based on the methodology from Farré et al. 2021 (Mol Biol Evol).
+### Abstract
 
-## Overview
+Comparative genomics has revealed that patterns of genomic variability are associated with maximum lifespan across mammals, as elegantly demonstrated by Farré et al. in their nuclear-genome study of convergent amino-acid substitutions (CAAS) and longevity \[[Farré et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\]. Inspired by that work, this project focuses specifically on **mitochondrial DNA**, using complete mitochondrial genomes to search for amino-acid changes associated with extended lifespan.  
+Here, we (1) compute **Longevity Quotient (LQ)** for mammalian species from the **AnAge** database \[[AnAge database](https://genomics.senescence.info/species/)\], (2) classify species into long‑lived, short‑lived, and validation groups, (3) download their complete mitochondrial genomes from **NCBI** in GenBank format, (4) extract the 13 canonical mitochondrial protein‑coding genes, (5) align nucleotide and protein sequences, and (6) identify CAAS distinguishing long‑lived and short‑lived species, with statistical validation on intermediate‑LQ species. The goal is to obtain a small but interpretable set of mitochondrial amino‑acid substitutions that are enriched in long‑lived mammals and could represent **mitochondrial genomic signatures of longevity**.
 
-This pipeline analyzes the 13 protein-coding genes in mitochondrial genomes to discover amino acid changes that distinguish long-lived from short-lived species, correcting for body mass effects.
+---
 
-### Mitochondrial Protein-Coding Genes Analyzed
-- **ATP synthase**: ATP6, ATP8
-- **Cytochrome c oxidase**: COX1, COX2, COX3
-- **Cytochrome b**: CYTB
-- **NADH dehydrogenase**: ND1, ND2, ND3, ND4, ND4L, ND5, ND6
+## Overview of the Repository
 
-## Installation
+- **anage_LQ.py**  
+  **Step 1 – Longevity Quotient calculation and target selection.**  
+  - Reads the AnAge tab‑delimited file (e.g. `data/anage_data.txt`).  
+  - Filters species by taxonomic class (default: **Mammalia**).  
+  - Computes Longevity Quotient (LQ) and writes `data/LQ/lq_results.csv`.  
+  - Creates species lists for downstream steps:
+    - `data/LQ/fetch_targets.txt` – all species used for genome download  
+    - `data/LQ/long_lived_targets.txt` – long‑lived species  
+    - `data/LQ/short_lived_targets.txt` – short‑lived species  
+    - `data/LQ/validation_targets.txt` – intermediate‑LQ species (for validation)
 
-### Requirements
-```bash
-# Python packages
-pip install biopython pandas numpy scipy matplotlib seaborn statsmodels
+- **download_genbank.py**  
+  **Step 2 – Download complete mitochondrial genomes from NCBI.**  
+  - Reads species IDs from `data/LQ/fetch_targets.txt`.  
+  - Queries NCBI `nuccore` (RefSeq preferred) for each species’ **complete mitochondrial genome**.  
+  - Saves GenBank files to `data/genbank_files/*.gb`.  
 
-# Alignment tools (choose one)
-# MAFFT (recommended)
-sudo apt-get install mafft  # Ubuntu/Debian
-brew install mafft           # macOS
-conda install -c bioconda mafft  # Conda
+- **extract_genes_genbank.py**  
+  **Step 3 – Extract mitochondrial genes from GenBank.**  
+  - Reads each `.gb` file in `data/genbank_files/`.  
+  - Uses CDS annotations to extract the 13 protein‑coding mitochondrial genes:
+    - **ATP6, ATP8, COX1, COX2, COX3, CYTB, ND1, ND2, ND3, ND4, ND4L, ND5, ND6**  
+  - Handles multiple gene name variants in GenBank annotations (e.g. COI, COXI, NAD1, COB, etc.).  
+  - Writes:
+    - Nucleotide FASTA: `data/extracted_genes/nucleotides/GENE/species.fasta`  
+    - Protein FASTA: `data/extracted_genes/proteins/GENE/species.fasta`
 
-# OR MUSCLE
-sudo apt-get install muscle  # Ubuntu/Debian
-```
+- **align_genes.py**  
+  **Step 4 – Multiple sequence alignment of mitochondrial genes.**  
+  - Combines per‑species FASTA files per gene into multi‑FASTA.  
+  - Aligns sequences using **MAFFT** (default) or **MUSCLE**.  
+  - Produces alignments for both:
+    - `data/alignments/proteins/GENE_aligned.fasta`  
+    - `data/alignments/nucleotides/GENE_aligned.fasta`  
+  - Reports basic alignment statistics (number of sequences, alignment length, gap percentage).
 
-## Directory Structure
+- **caas_discovery_from_lists.py**  
+  **Step 5 – CAAS discovery and validation using predefined species lists.**  
+  - Uses protein and/or nucleotide alignments in `data/alignments/`.  
+  - Reads long‑lived and short‑lived species from:
+    - `data/LQ/long_lived_targets.txt`  
+    - `data/LQ/short_lived_targets.txt`  
+  - Optionally reads `data/LQ/lq_results.csv` to use LQ values in validation.  
+  - Detects positions where amino‑acid patterns differ systematically between groups (CAAS).  
+  - Performs a Mann–Whitney U‑test–based validation and a permutation test to assess enrichment.
 
-```
-mitochondrial_longevity_pipeline/
-├── data/
-│   ├── fasta_files/          # Place your mitochondrial genome FASTA files here
-│   ├── extracted_genes/      # Extracted genes (auto-generated)
-│   ├── alignments/           # Gene alignments (auto-generated)
-│   └── phenotypes/
-│       └── phenotype_data.csv  # Species metadata (YOU MUST CREATE THIS)
-├── scripts/
-│   ├── 01_extract_mt_genes.py
-│   ├── 02_align_genes.py
-│   ├── 03_calculate_lq.py
-│   ├── 04_caas_discovery.py
-│   └── 05_caas_validation.py
-├── results/
-│   ├── caas_discovery/       # Discovery results (auto-generated)
-│   └── caas_validation/      # Validation results (auto-generated)
-└── README.md
-```
+- **mitochondrial_longevity_pipeline.py**  
+  **Master pipeline runner.**  
+  - Cleans all intermediate data directories:
+    - `data/alignments/`  
+    - `data/LQ/`  
+    - `data/extracted_genes/`  
+    - `data/genbank_files/`  
+  - Then runs the full pipeline in order:
+    1. `anage_LQ.py`  
+    2. `download_genbank.py`  
+    3. `extract_genes_genbank.py`  
+    4. `align_genes.py`  
+    5. `caas_discovery_from_lists.py`
 
-## Step-by-Step Usage
+---
 
-### Step 1: Prepare Your Data
+## Installation and Requirements
 
-#### 1.1 Mitochondrial Genome Files
-Place your mitochondrial genome FASTA files in `data/fasta_files/`.
+- **Python**: 3.x  
+- **Python packages** (install via `pip`):
+  - **biopython**
+  - **pandas**
+  - **numpy**
+  - **scipy**
+  - (optionally) **matplotlib**, **seaborn**, **statsmodels** if you extend the analyses
+- **External tools**:
+  - **MAFFT** (recommended) or **MUSCLE** for multiple sequence alignment  
+  - Internet access to query NCBI and download GenBank records
 
-**File naming convention**: Use species identifiers as filenames (e.g., `homo_sapiens.fasta`, `mus_musculus.fasta`)
-
-**Supported formats**:
-- Complete mitochondrial genomes (FASTA)
-- GenBank format with CDS annotations (preferred for accurate gene extraction)
-
-#### 1.2 Phenotype Data
-Create `data/phenotypes/phenotype_data.csv` with the following columns:
-
-| Column | Description | Example |
-|--------|-------------|---------|
-| species_id | Unique identifier (match FASTA filename) | homo_sapiens |
-| species_name | Full scientific name | Homo sapiens |
-| max_lifespan_years | Maximum documented lifespan | 122.5 |
-| body_mass_kg | Adult body mass in kilograms | 62.0 |
-| notes | Optional notes | Reference: Smith et al. 2020 |
-
-**Example:**
-```csv
-species_id,species_name,max_lifespan_years,body_mass_kg,notes
-homo_sapiens,Homo sapiens,122.5,62.0,Human
-mus_musculus,Mus musculus,4.0,0.02,House mouse
-myotis_lucifugus,Myotis lucifugus,34,0.007,Little brown bat
-```
-
-**Data sources**:
-- AnAge Database: https://genomics.senescence.info/species/
-- NCBI Taxonomy: https://www.ncbi.nlm.nih.gov/taxonomy
-- Primary literature
-
-**Recommended minimum**: 20-30 species for robust analysis
-
-### Step 2: Extract Mitochondrial Genes
+Example installation:
 
 ```bash
-python scripts/01_extract_mt_genes.py -i data/fasta_files -o data/extracted_genes -f fasta
+pip install biopython pandas numpy scipy
+sudo apt-get install mafft   # or: sudo apt-get install muscle
 ```
 
-**Options**:
-- `-i, --input`: Input directory with FASTA/GenBank files
-- `-o, --output`: Output directory for extracted genes
-- `-f, --format`: File format (`fasta` or `genbank`)
+---
 
-**Output**:
-- Creates separate directories for each gene
-- Extracts both nucleotide and protein sequences
-- Translation uses vertebrate mitochondrial genetic code (Table 2)
+## Data Inputs
 
-**Note**: For raw FASTA files, this script uses approximate gene coordinates. For best results, use GenBank format files with CDS annotations.
+- **AnAge longevity and body mass data**
+  - Tab‑delimited file such as `data/anage_data.txt` obtained from the **AnAge** database \[[AnAge database](https://genomics.senescence.info/species/)\].
+  - Must contain (at least) columns similar to:
+    - `Class`, `Genus`, `Species`  
+    - `Maximum longevity (yrs)`  
+    - `Body mass (g)`  
 
-### Step 3: Align Genes
+- **NCBI mitochondrial genomes**
+  - Downloaded automatically by `download_genbank.py` from NCBI’s `nuccore` database into `data/genbank_files/` as `.gb` files.  
+  - Searches are constrained to **mitochondrial complete genomes**, preferring curated RefSeq accessions.
+
+---
+
+## Pipeline Usage
+
+- **Run everything from scratch (recommended)**:
 
 ```bash
-python scripts/02_align_genes.py -i data/extracted_genes -o data/alignments -a mafft -t protein
+python mitochondrial_longevity_pipeline.py
 ```
 
-**Options**:
-- `-i, --input`: Input directory with extracted genes
-- `-o, --output`: Output directory for alignments
-- `-a, --aligner`: Alignment tool (`mafft` or `muscle`)
-- `-t, --type`: Sequence type (`protein` or `nucleotide`)
+This will:
+- Wipe `data/alignments/`, `data/LQ/`, `data/extracted_genes/`, and `data/genbank_files/`.  
+- Recompute LQ and target species.  
+- Re‑download mitochondrial genomes.  
+- Re‑extract genes and realign them.  
+- Run CAAS discovery and validation.
 
-**Output**:
-- Multiple sequence alignments for each gene
-- Alignment statistics (length, gaps percentage)
-
-**Recommendation**: Use protein alignments for CAAS analysis
-
-### Step 4: Calculate Longevity Quotient (LQ)
+- **Run individual steps manually** (if you want more control):
 
 ```bash
-python scripts/03_calculate_lq.py -i data/phenotypes/phenotype_data.csv -o data/phenotypes/lq_data.csv --plot
+python anage_LQ.py
+python download_genbank.py
+python extract_genes_genbank.py
+python align_genes.py
+python caas_discovery_from_lists.py
 ```
 
-**Options**:
-- `-i, --input`: Input phenotype CSV file
-- `-o, --output`: Output CSV with LQ values
-- `--top-decile`: Top decile fraction (default: 0.1 = top 10%)
-- `--bottom-decile`: Bottom decile fraction (default: 0.1)
-- `--plot`: Generate visualization plots
+---
 
-**Output**:
-- `lq_data.csv`: Species with LQ values and classifications
-- `long-lived_species.txt`: List of long-lived species
-- `short-lived_species.txt`: List of short-lived species
-- `intermediate_species.txt`: List of intermediate species
-- `lq_distribution.png`: Visualization (if --plot used)
+## Methodological Details
 
-**LQ Formula**: LQ = Observed MLS / Expected MLS
-- Expected MLS = 4.88 × body_mass^0.19 (de Magalhães et al. 2007)
-- LQ > 1: Lives longer than expected for body size
-- LQ < 1: Lives shorter than expected
+### Longevity Quotient (LQ) Calculation
 
-### Step 5: CAAS Discovery
+- **Objective**: Correct maximum lifespan for body mass to identify species that live longer or shorter than expected for their size, following the comparative framework of \[[Farré et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\].  
+- **Input**: AnAge mammalian dataset (`data/anage_data.txt`).  
+- **Steps (implemented in `anage_LQ.py`)**:
+  - Filter to **Mammalia** (or another class via `--class_filter`).  
+  - Compute:
+    - \( \text{body\_mass\_kg} = \frac{\text{Body mass (g)}}{1000} \)  
+    - \( \text{expected\_mls} = 4.88 \times \text{body\_mass\_kg}^{0.19} \)  
+    - \( \text{LQ} = \dfrac{\text{max\_lifespan\_years}}{\text{expected\_mls}} \)  
+  - Define species ID:
+    - `species_id = Genus + '_' + Species` (e.g. `Homo_sapiens`).  
+  - Save processed table (`lq_results.csv`) with `species_id`, `longevity_quotient`, lifespan, body mass, and taxonomic information.  
+  - Select groups:
+    - **Long‑lived**: highest‑LQ species (top tail).  
+    - **Short‑lived**: lowest‑LQ species (bottom tail).  
+    - **Validation**: species from the mid‑LQ range.  
+  - Write text files listing species per group for downstream scripts.
 
-```bash
-python scripts/04_caas_discovery.py -a data/alignments -l data/phenotypes/lq_data.csv -o results/caas_discovery
-```
+### Mitochondrial Gene Extraction
 
-**Options**:
-- `-a, --alignments`: Directory with aligned sequences
-- `-l, --lq-data`: CSV with LQ data
-- `-o, --output`: Output directory
-- `--permutations`: Number of permutations for significance (default: 1000)
-- `--skip-permutations`: Skip permutation testing
+- **Objective**: Obtain consistent sets of the 13 mitochondrial protein‑coding genes across species directly from annotated GenBank records (mitochondrial genomes).  
+- **Implementation (`extract_genes_genbank.py`)**:
+  - For each `*.gb` file:
+    - Parse GenBank annotations using **Biopython**.  
+    - Iterate over CDS features; try to infer a standard gene name from `gene` or `product` qualifiers.
+    - Normalize various annotation styles (e.g. “Cytochrome c oxidase subunit I” → `COX1`).
+    - Extract the nucleotide sequence using feature locations.
+    - Translate using the **vertebrate mitochondrial genetic code (table 2)**:
+      - Remove trailing stop codon (`*`) when present.
+  - Save per‑gene nucleotide and protein FASTA files organized by gene folder.
 
-**Three Scenarios Detected**:
+### Multiple Sequence Alignment
 
-1. **Scenario 1**: All long-lived have same AA, all short-lived have different fixed AA
-   - Example: Position 100: Long-lived = A, Short-lived = T
-   
-2. **Scenario 2**: All long-lived have same AA, short-lived have variable AAs
-   - Example: Position 200: Long-lived = G, Short-lived = {C, T, A}
-   
-3. **Scenario 3**: Short-lived have fixed AA, long-lived have variable AAs
-   - Example: Position 300: Short-lived = F, Long-lived = {Y, W, H}
+- **Objective**: Produce per‑gene multiple sequence alignments for both nucleotide and amino‑acid sequences.  
+- **Implementation (`align_genes.py`)**:
+  - For each gene:
+    - Combine individual FASTA files into a gene‑specific multi‑FASTA.  
+    - Align with MAFFT (`--auto`) or MUSCLE.  
+    - Save:
+      - `data/alignments/proteins/GENE_aligned.fasta`  
+      - `data/alignments/nucleotides/GENE_aligned.fasta`  
+  - Compute basic alignment statistics:
+    - Number of sequences.  
+    - Alignment length.  
+    - Overall gap percentage.
 
-**Output**:
-- `caas_discovered.csv`: All discovered CAAS
-- `gene_summary.json`: Per-gene statistics
-- `discovery_summary.txt`: Overall summary
+### CAAS Discovery and Validation
 
-**Statistical Test**: Permutation test comparing observed vs. random expectations (p < 0.05)
+- **Objective**: Identify **Convergent Amino‑Acid Substitutions (CAAS)** that distinguish long‑lived from short‑lived mammals, and test whether these patterns are associated with LQ in intermediate‑LQ (validation) species.  
+- **Implementation (`caas_discovery_from_lists.py`)**:
+  - Uses predefined sets of species:
+    - `discovery_long`: intersection of `long_lived_targets.txt` with alignment species IDs.  
+    - `discovery_short`: intersection of `short_lived_targets.txt` with alignment species IDs.  
+    - `validation_species`: remaining species present in alignments.  
+  - For each aligned position in each gene:
+    - Skip sites where any discovery species is missing or carries a gap.  
+    - Evaluate three classical CAAS scenarios (adapted from \[[Farré et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\]):
+      - **Scenario 1**: long‑lived fixed for amino acid A, short‑lived fixed for amino acid B, \(A \neq B\).  
+      - **Scenario 2**: long‑lived fixed (A), short‑lived variable for amino acids not containing A.  
+      - **Scenario 3**: short‑lived fixed (B), long‑lived variable for amino acids not containing B.  
+    - Record gene, alignment position, scenario, and group‑specific residues.
+  - **Validation using intermediate‑LQ species**:
+    - For each CAAS position, collect LQ values (from `lq_results.csv`) for validation species grouped by their amino acid (long‑like vs short‑like configuration).  
+    - Apply **Mann–Whitney U test** (one‑sided; typically testing whether long‑like configuration is associated with higher LQ).  
+    - Mark CAAS as validated if the P‑value is below a relaxed threshold (e.g. 0.2, as implemented in the script).  
+  - **Permutation test**:
+    - Randomly shuffle species labels between long‑lived and short‑lived groups many times.  
+    - Recount S1 + S2 CAAS under random groupings.  
+    - Compare observed CAAS count to this null distribution to obtain an empirical P‑value for enrichment.
+  - **Outputs** (per alignment type – protein/nucleotide):
+    - `caas_discovered_*.csv` – all discovered CAAS.  
+    - `caas_validated_*.csv` – subset passing validation criteria.  
+    - `summary_*.json` – summary statistics (group sizes, counts per scenario, validation counts, permutation P‑value, etc.).
 
-### Step 6: CAAS Validation
+---
 
-```bash
-python scripts/05_caas_validation.py -a data/alignments -l data/phenotypes/lq_data.csv -c results/caas_discovery/caas_discovered.csv -o results/caas_validation
-```
+## Interpretation and Extensions
 
-**Options**:
-- `-a, --alignments`: Directory with alignments
-- `-l, --lq-data`: CSV with LQ data
-- `-c, --caas`: CSV with discovered CAAS
-- `-o, --output`: Output directory
-- `--fdr`: FDR threshold (default: 0.05)
+- **Biological interpretation**:
+  - Positions where long‑lived species share one amino acid and short‑lived species another may indicate **convergent adaptation** in mitochondrial proteins affecting lifespan.  
+  - Enrichment of CAAS in particular genes or complexes (e.g. NADH dehydrogenase vs. cytochrome c oxidase) may point to specific mitochondrial pathways linked to longevity.
 
-**Validation Method**:
-1. For each discovered CAAS position
-2. Group intermediate species by AA (long-lived AA vs short-lived AA)
-3. Compare LQ values between groups (t-test)
-4. Apply FDR correction (Benjamini-Hochberg)
-5. Keep only validated positions (FDR < 0.05)
+- **Possible extensions**:
+  - Structural mapping of validated CAAS on mitochondrial protein 3D models.  
+  - Integration with nuclear genomic data (as in \[[Farré et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\]) to compare nuclear and mitochondrial signatures.  
+  - More formal phylogenetic methods (e.g. PAML \[[Yang, 1997](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\] cited in the same paper) or dN/dS analyses for selection tests on mitochondrial genes.
 
-**Output**:
-- `caas_validation_results.csv`: All validation results
-- `caas_validated.csv`: Only validated CAAS
-- `validation_summary.txt`: Summary statistics
+---
 
-**Expected**: ~40% validation rate (similar to Farré et al. 2021)
+## Reference
 
-## Interpreting Results
+- **Comparative Analysis of Mammal Genomes Unveils Key Genomic Variability for Human Life Span** – Farré et al., *Molecular Biology and Evolution* (2021) \[[link](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\].  
+  - This project adapts the CAAS‑and‑longevity framework from that nuclear‑genome study to focus exclusively on **mitochondrial DNA**.
 
-### Key Output Files
-
-1. **caas_validated.csv**: Your main results
-   - Columns: gene, position, scenario, p_value, direction
-   - Focus on validated CAAS for biological interpretation
-
-2. **gene_summary.json**: Which genes have most CAAS
-   - Identifies genes under strongest selection for longevity
-
-3. **validation_summary.txt**: Overall statistics
-   - Compare your results to expected ~42% validation rate
-
-### What to Look For
-
-1. **Genes with most validated CAAS**: Strongest candidates for longevity
-2. **Specific positions**: Can be mapped to protein structures
-3. **Amino acid changes**: Functional implications (charge, size, hydrophobicity)
-4. **Validation rates**: Should be significantly higher than 5% (random expectation)
-
-### Follow-Up Analyses (Not Included Yet)
-
-1. **Functional annotation**: Map CAAS to protein domains
-2. **Protein stability**: Compare stability between long/short-lived proteins
-3. **dN/dS analysis**: Gene-level evolutionary rates
-4. **Pathway enrichment**: Which biological pathways are enriched
-
-## Troubleshooting
-
-### Common Issues
-
-**Problem**: No genes extracted
-- **Solution**: Check FASTA file format. Use GenBank format if possible.
-
-**Problem**: Low alignment quality (>50% gaps)
-- **Solution**: Remove divergent species or problematic sequences
-
-**Problem**: No CAAS discovered
-- **Solution**: Check species classification. May need more species or different decile thresholds.
-
-**Problem**: Low validation rate (<10%)
-- **Solution**: May indicate insufficient power. Try:
-  - Add more species
-  - Adjust decile thresholds
-  - Check data quality
-
-### Getting Help
-
-1. Check output logs for error messages
-2. Verify input file formats match specifications
-3. Ensure sufficient species in each category (min 5-6 per group)
-
-## Example Workflow
-
-```bash
-# 1. Setup (one time)
-mkdir -p data/fasta_files data/phenotypes
-
-# 2. Add your data
-# - Copy FASTA files to data/fasta_files/
-# - Create data/phenotypes/phenotype_data.csv
-
-# 3. Run pipeline
-python scripts/01_extract_mt_genes.py
-python scripts/02_align_genes.py
-python scripts/03_calculate_lq.py -i data/phenotypes/phenotype_data.csv --plot
-python scripts/04_caas_discovery.py
-python scripts/05_caas_validation.py
-
-# 4. Check results
-cat results/caas_validation/validation_summary.txt
-```
-
-## Citation
-
-If you use this pipeline, please cite:
-
-**Original methodology**:
-Farré X, et al. (2021) Comparative Analysis of Mammal Genomes Unveils Key Genomic Variability for Human Life Span. Mol Biol Evol. 38(11):4948-4961.
-
-## License
-
-This pipeline is provided as-is for academic and research purposes.
-
-## Contact
-
-For questions about this pipeline, check the troubleshooting section or review the original paper's methodology.

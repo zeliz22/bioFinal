@@ -1,7 +1,6 @@
 gene,position,scenario,long_lived_char,short_lived_char,alignment_type,validated,validation_pvalue,n_long_val,n_short_val
-ATP8,33,scenario_2,Y,FLM,protein,True,0.012223128742389889,16,24
-COX1,297,scenario_1,M,L,protein,True,0.19196855511194133,28,12
-COX3,175,scenario_3,FL,I,protein,True,0.1037358559180191,29,8
-CYTB,357,scenario_2,L,AMS,protein,True,0.1611968961208381,25,12
-ND2,14,scenario_3,FI,L,protein,True,0.1313932367725265,21,10
-ND2,227,scenario_2,T,IM,protein,True,0.13281819562089453,26,11
+ATP8,33,scenario_2,Y,FLM,protein,True,0.016558614119769922,16,21
+COX3,175,scenario_3,FL,I,protein,True,0.10682814535461267,28,7
+CYTB,357,scenario_2,L,AMS,protein,True,0.16757074498049052,24,10
+ND2,14,scenario_3,FI,L,protein,True,0.16259760178118315,19,9
+ND2,227,scenario_2,T,IM,protein,True,0.1371951256998758,25,9
