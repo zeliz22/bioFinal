@@ -2,3 +2,5 @@ Myotis_lucifugus
 Plecotus_auritus
 Heterocephalus_glaber
 Desmodus_rotundus
+Homo_sapiens
+Miniopterus_schreibersii

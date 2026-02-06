@@ -46,7 +46,7 @@ def main():
     df_sorted = df.sort_values('LQ', ascending=False)
 
 
-    amoundOfSpeciesInEachGroup = 4
+    amoundOfSpeciesInEachGroup = 6
 
     # Group 1: Top 4 (Long-lived)
     top4 = df_sorted.head(amoundOfSpeciesInEachGroup)['species_id'].tolist()

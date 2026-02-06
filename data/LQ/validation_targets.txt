@@ -1,3 +1,12 @@
+Cynomys_ludovicianus
+Lepus_timidus
+Hystrix_africaeaustralis
+Enhydra_lutris
+Potorous_tridactylus
+Podomys_floridanus
+Orycteropus_afer
+Galerella_sanguinea
+Vulpes_velox
 Vulpes_macrotis
 Cervus_elaphus
 Arctogalidia_trivirgata
@@ -5,7 +14,6 @@ Canis_latrans
 Dipodomys_heermanni
 Trichosurus_vulpecula
 Elephantulus_rufescens
-Planigale_maculata
 Ailurus_fulgens
 Puma_concolor
 Callospermophilus_lateralis
@@ -30,3 +38,11 @@ Puma_yagouaroundi
 Dasyuroides_byrnei
 Tamandua_mexicana
 Neovison_vison
+Sekeetamys_calurus
+Perognathus_parvus
+Notomys_alexis
+Glis_glis
+Philantomba_monticola
+Gulo_gulo
+Jaculus_jaculus
+Meles_meles

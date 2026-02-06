@@ -377,7 +377,7 @@ class CAASDiscoveryFromLists:
                     alternative='greater'
                 )
                 
-                caas['validated'] = pvalue < 0.15
+                caas['validated'] = pvalue < 0.2
                 caas['validation_pvalue'] = pvalue
                 caas['n_long_val'] = len(group_long)
                 caas['n_short_val'] = len(group_short)

@@ -1,3 +1,5 @@
+Hemicentetes_semispinosus
+Didelphis_marsupialis
 Arvicola_amphibius
 Metachirus_nudicaudatus
 Echymipera_rufescens
