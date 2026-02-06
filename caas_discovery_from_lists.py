@@ -47,10 +47,8 @@ class CAASDiscoveryFromLists:
         else:
             self.align_dir = self.base_dir / "nucleotides"
         
-        # Read species lists from files
         self._load_species_lists(long_lived_file, short_lived_file)
         
-        # Optionally load LQ data for validation
         self.lq_data = None
         self.lq_dict = {}
         if lq_data_file and Path(lq_data_file).exists():
@@ -59,7 +57,6 @@ class CAASDiscoveryFromLists:
             print(f"  Columns in LQ file: {list(self.lq_data.columns)}")
             print(f"  Shape: {self.lq_data.shape}")
             
-            # Try to find the right columns
             if 'species_id' in self.lq_data.columns and 'longevity_quotient' in self.lq_data.columns:
                 self.lq_dict = dict(zip(
                     self.lq_data['species_id'],
@@ -67,7 +64,6 @@ class CAASDiscoveryFromLists:
                 ))
                 print(f"  ✓ Successfully loaded LQ data for {len(self.lq_dict)} species")
             else:
-                # Show what columns exist to help debug
                 print(f"  ✗ Expected columns 'species_id' and 'longevity_quotient' not found!")
                 print(f"  Available columns: {list(self.lq_data.columns)}")
                 print(f"  First few rows:")
@@ -75,10 +71,8 @@ class CAASDiscoveryFromLists:
         elif lq_data_file:
             print(f"\nWARNING: LQ data file not found: {lq_data_file}")
         
-        # Detect which species are in alignments
         self._detect_alignment_species()
         
-        # Create groups
         self._create_groups()
         
         self.caas_results = []
@@ -86,11 +80,9 @@ class CAASDiscoveryFromLists:
         
     def _load_species_lists(self, long_lived_file, short_lived_file):
         """Load species IDs from text files."""
-        # Read long-lived species
         with open(long_lived_file, 'r') as f:
             self.target_long = set(line.strip() for line in f if line.strip())
         
-        # Read short-lived species
         with open(short_lived_file, 'r') as f:
             self.target_short = set(line.strip() for line in f if line.strip())
         
@@ -102,7 +94,6 @@ class CAASDiscoveryFromLists:
         print(f"Short-lived file: {short_lived_file}")
         print(f"  → {len(self.target_short)} species")
         
-        # Check for overlap (should be none)
         overlap = self.target_long & self.target_short
         if overlap:
             print(f"WARNING: {len(overlap)} species in both lists: {overlap}")
@@ -113,7 +104,6 @@ class CAASDiscoveryFromLists:
         if not sample_files:
             raise FileNotFoundError(f"No alignment files in {self.align_dir}")
         
-        # Read first alignment to see which species exist
         sample_aln = AlignIO.read(sample_files[0], "fasta")
         self.alignment_species = {rec.id for rec in sample_aln}
         
@@ -125,13 +115,10 @@ class CAASDiscoveryFromLists:
         Create discovery groups from the target lists.
         Only use species that are in both the target lists AND alignments.
         """
-        # Long-lived: intersection of target list and alignment species
         self.discovery_long = self.target_long & self.alignment_species
         
-        # Short-lived: intersection of target list and alignment species
         self.discovery_short = self.target_short & self.alignment_species
         
-        # Validation species: any other species in alignments (not in target lists)
         self.validation_species = (
             self.alignment_species - self.target_long - self.target_short
         )
@@ -156,7 +143,6 @@ class CAASDiscoveryFromLists:
         else:
             print(f"  Validation:     0 species (all species used for discovery)")
         
-        # Check if any target species are missing from alignments
         missing_long = self.target_long - self.alignment_species
         missing_short = self.target_short - self.alignment_species
         
@@ -172,7 +158,6 @@ class CAASDiscoveryFromLists:
         
         print(f"{'='*70}\n")
         
-        # Validation check
         if len(self.discovery_long) < 2:
             raise ValueError(
                 f"Only {len(self.discovery_long)} long-lived species found in alignments. "
@@ -249,16 +234,13 @@ class CAASDiscoveryFromLists:
                     for r in aln if r.id in self.discovery_short
                 }
                 
-                # Skip if any discovery species missing
                 if (len(long_chars) != len(self.discovery_long) or 
                     len(short_chars) != len(self.discovery_short)):
                     continue
                 
-                # Skip gaps
                 if '-' in long_chars.values() or '-' in short_chars.values():
                     continue
                 
-                # Check scenarios
                 result = None
                 for check_func in [self.check_scenario_1, 
                                   self.check_scenario_2, 
@@ -554,7 +536,6 @@ def main():
     
     args = parser.parse_args()
     
-    # Check that list files exist
     if not Path(args.long_lived).exists():
         raise FileNotFoundError(f"Long-lived species file not found: {args.long_lived}")
     if not Path(args.short_lived).exists():

@@ -34,7 +34,6 @@ def check_aligner_available(aligner='mafft'):
 def combine_sequences(gene_dir, output_file):
     """Combine individual FASTA files into a single multi-FASTA"""
     gene_path = Path(gene_dir)
-    # Search for .fasta, .fa, or .fas extensions
     fasta_files = list(gene_path.glob("*.fasta")) + list(gene_path.glob("*.fa")) + list(gene_path.glob("*.fas"))
 
     if not fasta_files:
@@ -45,7 +44,6 @@ def combine_sequences(gene_dir, output_file):
     for fasta_file in fasta_files:
         try:
             for record in SeqIO.parse(fasta_file, "fasta"):
-                # Use filename as part of ID if sequences don't have unique IDs
                 sequences.append(record)
         except Exception as e:
             print(f"  Error reading {fasta_file}: {e}")
@@ -106,7 +104,6 @@ def align_genes(input_dir, output_dir, aligner='mafft', sequence_type='proteins'
     Align all mitochondrial genes based on new folder structure
     """
     input_path = Path(input_dir)
-    # The crucial fix: point to the correct subfolder (nucleotides/ or proteins/)
     base_gene_path = input_path / sequence_type
 
     output_path = Path(output_dir) / sequence_type
@@ -122,7 +119,6 @@ def align_genes(input_dir, output_dir, aligner='mafft', sequence_type='proteins'
         print(f"Aligning {gene} ({sequence_type})")
         print(f"{'=' * 60}")
 
-        # Look inside the subfolder for the specific gene
         gene_dir = base_gene_path / gene
 
         if not gene_dir.exists():
@@ -150,7 +146,6 @@ def align_genes(input_dir, output_dir, aligner='mafft', sequence_type='proteins'
         else:
             alignment_summary[gene] = {'status': 'failed', 'reason': 'alignment_error'}
 
-    # Clean up
     for file in temp_dir.glob("*"):
         file.unlink()
     temp_dir.rmdir()
@@ -163,7 +158,6 @@ def main():
     parser.add_argument('-i', '--input', default='data/extracted_genes', help='Root input dir')
     parser.add_argument('-o', '--output', default='data/alignments', help='Output dir')
     parser.add_argument('-a', '--aligner', choices=['mafft', 'muscle'], default='mafft')
-    # Changed default/choices to match your folder names: 'nucleotides' or 'proteins'
     parser.add_argument('-t', '--type', choices=['nucleotides', 'proteins'], default='proteins')
 
     args = parser.parse_args()
@@ -172,12 +166,10 @@ def main():
         print(f"ERROR: {args.aligner} not found.")
         return
 
-    # Change this in your main() function to do both automatically:
     for seq_type in ['proteins', 'nucleotides']:
         print(f"Starting alignment for: {seq_type}")
         align_genes(args.input, args.output, args.aligner, seq_type)
 
-    # summary = align_genes(args.input, args.output, args.aligner, args.type)
     print(f"\n✓ Finished! Aligned files are in {args.output}/{args.type}")
 
 

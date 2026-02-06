@@ -80,20 +80,15 @@ def extract_gene_from_genbank(genbank_file, gene_name):
 
         for feature in record.features:
             if feature.type == "CDS":
-                # Get gene name from feature
                 feature_gene = None
 
-                # Try 'gene' qualifier
                 if 'gene' in feature.qualifiers:
                     feature_gene = normalize_gene_name(feature.qualifiers['gene'][0])
 
-                # Try 'product' qualifier if gene not found
                 if not feature_gene and 'product' in feature.qualifiers:
                     feature_gene = normalize_gene_name(feature.qualifiers['product'][0])
 
-                # Check if this is our target gene
                 if feature_gene == gene_name:
-                    # Extract sequence using the location in the annotation
                     gene_seq = feature.location.extract(record.seq)
                     return gene_seq
 
@@ -115,10 +110,8 @@ def translate_sequence(seq):
         Protein sequence or None if translation fails
     """
     try:
-        # Vertebrate mitochondrial genetic code is table 2
         protein = seq.translate(table=2, cds=False)
 
-        # Remove stop codon if present at the end
         protein_str = str(protein)
         if protein_str.endswith('*'):
             protein = protein[:-1]
@@ -142,18 +135,15 @@ def process_mitochondrial_genomes(input_dir, output_dir):
     output_path = Path(output_dir)
     output_path.mkdir(exist_ok=True, parents=True)
 
-    # Create output directories for nucleotides and proteins
     nucleotide_dir = output_path / "nucleotides"
     protein_dir = output_path / "proteins"
     nucleotide_dir.mkdir(exist_ok=True)
     protein_dir.mkdir(exist_ok=True)
 
-    # Create subdirectories for each gene
     for gene in MT_GENES:
         (nucleotide_dir / gene).mkdir(exist_ok=True)
         (protein_dir / gene).mkdir(exist_ok=True)
 
-    # Find all GenBank files
     gb_files = list(input_path.glob("*.gb")) + list(input_path.glob("*.gbk"))
 
     if not gb_files:
@@ -164,10 +154,8 @@ def process_mitochondrial_genomes(input_dir, output_dir):
     print(f"\nFound {len(gb_files)} GenBank files to process")
     print("=" * 70)
 
-    # Track extraction statistics
     extraction_summary = {gene: {'success': 0, 'failed': 0} for gene in MT_GENES}
 
-    # Process each file
     for gb_file in gb_files:
         species_id = gb_file.stem
         species_name = species_id.replace('_', ' ')
@@ -176,11 +164,9 @@ def process_mitochondrial_genomes(input_dir, output_dir):
         print("-" * 70)
 
         for gene in MT_GENES:
-            # Extract nucleotide sequence using GenBank annotations
             gene_seq = extract_gene_from_genbank(gb_file, gene)
 
             if gene_seq:
-                # Save nucleotide sequence
                 nuc_file = nucleotide_dir / gene / f"{species_id}.fasta"
                 nuc_record = SeqRecord(
                     gene_seq,
@@ -189,11 +175,9 @@ def process_mitochondrial_genomes(input_dir, output_dir):
                 )
                 SeqIO.write(nuc_record, nuc_file, "fasta")
 
-                # Translate to protein
                 protein_seq = translate_sequence(gene_seq)
 
                 if protein_seq:
-                    # Save protein sequence
                     prot_file = protein_dir / gene / f"{species_id}.fasta"
                     prot_record = SeqRecord(
                         protein_seq,
@@ -211,7 +195,6 @@ def process_mitochondrial_genomes(input_dir, output_dir):
                 extraction_summary[gene]['failed'] += 1
                 print(f"  ✗ {gene:6s}: Not found in annotations")
 
-    # Print summary
     print("\n" + "=" * 70)
     print("EXTRACTION SUMMARY")
     print("=" * 70)
@@ -227,7 +210,6 @@ def process_mitochondrial_genomes(input_dir, output_dir):
 
     print("=" * 70)
 
-    # Overall statistics
     total_success = sum(s['success'] for s in extraction_summary.values())
     total_attempts = sum(s['success'] + s['failed'] for s in extraction_summary.values())
     overall_pct = (total_success / total_attempts * 100) if total_attempts > 0 else 0

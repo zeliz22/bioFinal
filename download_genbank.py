@@ -4,7 +4,7 @@ import os
 
 # Configuration
 Entrez.email = "zeliz22@freeuni.edu.ge"
-input_file = "data/LQ/fetch_targets.txt"  # Path to your LQ results
+input_file = "data/LQ/fetch_targets.txt"  
 output_directory = "data/genbank_files"
 
 def load_species_from_file(filepath):
@@ -14,7 +14,6 @@ def load_species_from_file(filepath):
         return []
     
     with open(filepath, 'r') as f:
-        # Read lines, strip whitespace, and replace underscores with spaces for NCBI
         species = [line.strip().replace('_', ' ') for line in f if line.strip()]
     return species
 
@@ -22,7 +21,6 @@ def find_mitochondrial_accession(species_name):
     """Search NCBI for mitochondrial genome RefSeq accession number."""
     print(f"  Searching for accession number for {species_name}...")
     try:
-        # search_term targets the RefSeq 'NC_' entries which are curated complete genomes
         search_term = f'"{species_name}"[Organism] AND mitochondrion[Title] AND complete genome AND RefSeq[Filter]'
         
         handle = Entrez.esearch(db="nuccore", term=search_term, retmax=5)
@@ -58,7 +56,6 @@ def download_genbank(species_name, accession, output_dir):
         record = SeqIO.read(handle, "genbank")
         handle.close()
 
-        # Save with underscores for filename consistency
         species_filename = species_name.replace(' ', '_')
         output_file = os.path.join(output_dir, f"{species_filename}.gb")
 
@@ -73,7 +70,6 @@ def download_genbank(species_name, accession, output_dir):
         return False
 
 def main():
-    # 1. Load the targets from your file
     species_list = load_species_from_file(input_file)
     
     if not species_list:
@@ -103,7 +99,6 @@ def main():
         else:
             failed.append(species_name)
 
-        # Respect NCBI: Do not remove this sleep timer!
         time.sleep(0.5)
 
     print("\n" + "=" * 70)
