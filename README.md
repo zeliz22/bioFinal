@@ -69,6 +69,12 @@ Here, we (1) compute **Longevity Quotient (LQ)** for mammalian species from the 
     4. `align_genes.py`  
     5. `caas_discovery_from_lists.py`
 
+- **Run everything from scratch (recommended)**:
+
+  ```bash
+  python mitochondrial_longevity_pipeline.py
+  ```
+
 ---
 
 ## Installation and Requirements
@@ -108,32 +114,6 @@ sudo apt-get install mafft   # or: sudo apt-get install muscle
 
 ---
 
-## Pipeline Usage
-
-- **Run everything from scratch (recommended)**:
-
-```bash
-python mitochondrial_longevity_pipeline.py
-```
-
-This will:
-- Wipe `data/alignments/`, `data/LQ/`, `data/extracted_genes/`, and `data/genbank_files/`.  
-- Recompute LQ and target species.  
-- Re‑download mitochondrial genomes.  
-- Re‑extract genes and realign them.  
-- Run CAAS discovery and validation.
-
-- **Run individual steps manually** (if you want more control):
-
-```bash
-python anage_LQ.py
-python download_genbank.py
-python extract_genes_genbank.py
-python align_genes.py
-python caas_discovery_from_lists.py
-```
-
----
 
 ## Methodological Details
 
@@ -211,19 +191,6 @@ python caas_discovery_from_lists.py
     - `caas_discovered_*.csv` – all discovered CAAS.  
     - `caas_validated_*.csv` – subset passing validation criteria.  
     - `summary_*.json` – summary statistics (group sizes, counts per scenario, validation counts, permutation P‑value, etc.).
-
----
-
-## Interpretation and Extensions
-
-- **Biological interpretation**:
-  - Positions where long‑lived species share one amino acid and short‑lived species another may indicate **convergent adaptation** in mitochondrial proteins affecting lifespan.  
-  - Enrichment of CAAS in particular genes or complexes (e.g. NADH dehydrogenase vs. cytochrome c oxidase) may point to specific mitochondrial pathways linked to longevity.
-
-- **Possible extensions**:
-  - Structural mapping of validated CAAS on mitochondrial protein 3D models.  
-  - Integration with nuclear genomic data (as in \[[Farré et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\]) to compare nuclear and mitochondrial signatures.  
-  - More formal phylogenetic methods (e.g. PAML \[[Yang, 1997](https://pmc.ncbi.nlm.nih.gov/articles/PMC8557403/)\] cited in the same paper) or dN/dS analyses for selection tests on mitochondrial genes.
 
 ---
 
